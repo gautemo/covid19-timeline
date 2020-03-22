@@ -57,7 +57,7 @@ export default {
 }
 
 .btn.play .bar-1 {
-    transform: translateX(calc(var(--size) / 2)) translateY(calc(0px - var(--size) / 8)) rotate(-55deg);
+    transform: translateX(calc(var(--size) / 2)) translateY(calc(var(--size) / -8)) rotate(-55deg);
 }
 
 .btn.play .bar-2 {
