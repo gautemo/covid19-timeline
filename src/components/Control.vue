@@ -2,7 +2,10 @@
   <div class="control">
     <PlayButton @click="control.playing = !control.playing" :playing="control.playing" />
     <input class="speed" type="range" min="500" max="5000" v-model="control.speed" :style="{ '--percentage': `${(control.speed - 500) / 4500 * 100}%` }" />
-    <Speed/>
+    <span class="speed-display">
+        {{speedDisplay}}
+        <Speed/>
+    </span>
     <Stats/>
     <div class="progress-bar">
         <Today />
@@ -54,7 +57,9 @@ export default {
 
     const day = computed(() => new Intl.DateTimeFormat().format(new Date(state.day.value.date)));
 
-    return { day, nrDays: state.nrDays, progress: state.progress, control }
+    const speedDisplay = computed(() => `${parseFloat((control.speed/1000).toFixed(1))}s`)
+
+    return { day, nrDays: state.nrDays, progress: state.progress, control, speedDisplay }
   },
   components: { PlayButton, Speed, Today, Stats }
 }
@@ -63,7 +68,7 @@ export default {
 <style scoped>
 .control{
     display: grid;
-    grid-template-columns: 30px 200px 30px 1fr;
+    grid-template-columns: 30px 200px 70px 1fr;
     padding: 25px;
     align-items: center;
     gap: 20px 5px;
@@ -100,6 +105,11 @@ input.speed:hover + svg >>> .path{
     display: grid;
     grid-template-columns: auto auto 1fr;
     gap: 10px;
+    align-items: center;
+}
+
+.speed-display{
+    display: flex;
     align-items: center;
 }
 
@@ -169,7 +179,7 @@ input.speed:hover + svg >>> .path{
 @media only screen and (max-width: 600px) {
     .control{
         padding: 5px;
-        grid-template-columns: 30px 1fr 30px;
+        grid-template-columns: 30px 1fr 70px;
     }
 }
 </style>
