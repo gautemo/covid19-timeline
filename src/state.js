@@ -8,10 +8,7 @@ const state = reactive({
     progress: 0,
 })
 
-const load = async () => {
-    state.data = await getCovid19();
-    console.log(state.data);
-}
+const load = async () => state.data = await getCovid19();
 
 load();
 

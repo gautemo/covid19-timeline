@@ -57,10 +57,10 @@ export default {
 
 const getOpacity = mag => {
   const o = 0.16 * mag ** 0.12;
-  return Math.max(Math.min(o, 1), 0.1);
+  return Math.max(Math.min(o, 1), 0.2);
 }
 
-const getScale = mag => 1.23 * mag ** 0.323
+const getScale = mag => 4.6 * mag ** 0.2
 
 </script>
 

@@ -52,7 +52,7 @@ export default {
       }
     })
 
-    const day = computed(() => console.log(state.day.value.date) || new Intl.DateTimeFormat().format(new Date(state.day.value.date)));
+    const day = computed(() => new Intl.DateTimeFormat().format(new Date(state.day.value.date)));
 
     return { day, nrDays: state.nrDays, progress: state.progress, control }
   },

@@ -7,15 +7,13 @@ const toGeo = incident => {
         return null;
     }
 
-    const totalNow = parseInt(incident.totalcases) - parseInt(incident.totalrecovered);
-    if(isNaN(totalNow)){
-        return null;
-    }
+    const total = parseInt(incident.totalcases) || 0;
+    const recovered = parseInt(incident.totalrecovered) || 0;
 
     return {
         type: "Feature",
         properties: {
-            mag: totalNow,
+            mag: total - recovered,
             place: incident.countrylabel,
             url: "https://thevirustracker.com/timeline/map-data.json",
         },
