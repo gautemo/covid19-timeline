@@ -15,14 +15,25 @@ a{
     font-style: inherit;
     text-decoration: none;
     color: inherit;
-    font-size: 1.2em;
+    font-size: 1.1em;
     background: var(--third-color);
     padding-left: 25px;
+}
+
+p{
+    flex: 1;
 }
 
 img{
     object-fit: contain;
     height: 100%;
     margin-left: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    a{
+        width: 100vw;
+        font-size: 1em;
+    }
 }
 </style>

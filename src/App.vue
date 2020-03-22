@@ -57,14 +57,16 @@ body{
 
 header{
   display: flex;
+  flex-wrap: wrap;
   background: var(--main-color);
-  padding-left: 25px;
   align-items: center;
 }
 
 header h1{
   flex: 1;
   color: var(--white);
+  padding-left: 25px;
+  white-space: nowrap;
 }
 
 main{
@@ -77,5 +79,11 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  header h1{
+    font-size: 1.2em;
+  }
 }
 </style>

@@ -31,7 +31,8 @@ export default {
         
         const format = num => new Intl.NumberFormat().format(num)
 
-        return { totalcases, totaldeaths, totalrecovered, infectedNow, format }
+        const day = computed(() => new Intl.DateTimeFormat().format(new Date(state.day.value.date)));
+        return { totalcases, totaldeaths, totalrecovered, infectedNow, format, day }
     }
 }
 </script>
@@ -49,5 +50,12 @@ span{
 
 .red{
     border-color: #d21921;
+}
+
+@media only screen and (max-width: 1150px) {
+    span{
+        display: inline-block;
+        font-size: 1em;
+    }
 }
 </style>

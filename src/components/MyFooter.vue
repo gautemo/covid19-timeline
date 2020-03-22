@@ -37,6 +37,7 @@ footer{
 
 .content{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -45,6 +46,7 @@ footer{
     display: flex;
     align-items: center;
     height: 30px;
+    white-space: nowrap;
 }
 .createdby{
     margin-right: 5px;
@@ -52,5 +54,11 @@ footer{
 
 a{
     color: inherit;
+}
+
+@media only screen and (max-width: 800px) {
+    p{
+        margin: 3px;
+    }
 }
 </style>

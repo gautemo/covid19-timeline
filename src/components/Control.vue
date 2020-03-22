@@ -103,6 +103,10 @@ input.speed:hover + svg >>> .path{
     align-items: center;
 }
 
+[type='range'], [type='range']::-webkit-slider-thumb{
+    appearance: none;
+}
+
 [type='range']::-webkit-slider-thumb {
     width: 1.1em;
     height: 1.1em;
@@ -139,4 +143,33 @@ input.speed:hover + svg >>> .path{
     opacity: 1;
 }
 
+@media only screen and (max-width: 1150px) {
+    .control{
+        padding: 15px;
+    }
+
+    .stats{
+        grid-column: 1 / -1;
+        justify-self: start;
+    }
+
+    [type='range']::-webkit-slider-thumb {
+        opacity: 1;
+    }
+
+    [type='range']::-ms-thumb {
+        opacity: 1;
+    }
+
+    [type='range']::-moz-range-thumb {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .control{
+        padding: 5px;
+        grid-template-columns: 30px 1fr 30px;
+    }
+}
 </style>
