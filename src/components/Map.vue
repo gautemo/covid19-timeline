@@ -60,7 +60,7 @@ const getOpacity = mag => {
   return Math.max(Math.min(o, 1), 0.1);
 }
 
-const getScale = mag => 0.47 * mag ** 0.39
+const getScale = mag => 1.23 * mag ** 0.323
 
 </script>
 
