@@ -7,10 +7,12 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "vue": "^2.6.11"
+    "vue": "^3.0.0-alpha.4"
   },
   "devDependencies": {
     "@vue/cli-service": "~4.2.0",
+    "@vue/compiler-sfc": "^3.0.0-alpha.4",
+    "vue-cli-plugin-vue-next": "0.0.4",
     "vue-template-compiler": "^2.6.11"
   }
 }

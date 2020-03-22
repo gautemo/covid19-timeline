@@ -1,28 +1,81 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <header>
+    <h1>COVID-19 Timeline</h1>
+    <Who/>
+  </header>
+  <main v-if="nrDays > 0">
+    <Control />
+    <Map/>
+  </main>
+  <main v-else class="center-content">
+    <p>...loading</p>
+  </main>
+  <MyFooter/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Who from '@/components/Who'
+import MyFooter from '@/components/MyFooter'
+import PlayButton from '@/components/PlayButton'
+import Control from '@/components/Control'
+import Map from '@/components/Map'
+
+import { useState } from '@/state.js';
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  setup(){
+    const state = useState();
+
+    return { nrDays: state.nrDays, }
+  },
+  components: { Who, MyFooter, Control, Map }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root{
+  --main-color: #35393C;
+  --second-color: #397367;
+  --third-color: #C0D6DF;
+  --fourth-color: #A3C4BC;
+  --white: #e9e9e9;
+}
+
+body{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+#app{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  display: flex;
+  background: var(--main-color);
+  padding-left: 25px;
+  align-items: center;
+}
+
+header h1{
+  flex: 1;
+  color: var(--white);
+}
+
+main{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.center-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
