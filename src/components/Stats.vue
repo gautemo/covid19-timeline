@@ -1,6 +1,6 @@
 <template>
     <div class="stats">
-        <span>Current Infected: <b>{{format(infectedNow)}}</b></span>
+        <span class="active red">Current Infected: <b>{{format(infectedNow)}}</b></span>
         <span>Total Cases: <b>{{format(totalcases)}}</b></span>
         <span>Recovered Cases: <b>{{format(totalrecovered)}}</b></span>
         <span>Total Deaths: <b>{{format(totaldeaths)}}</b></span>
@@ -40,5 +40,14 @@ export default {
 span{
     margin: 0 5px;
     font-size: 1.2em;
+}
+
+.active{
+    border-bottom: 3px solid;
+    border-radius: 2px;
+}
+
+.red{
+    border-color: #d21921;
 }
 </style>
