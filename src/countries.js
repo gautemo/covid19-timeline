@@ -245,7 +245,8 @@ const countries = new Map([
     ['ZA',	{latitude: -30.559482, longitude: 22.937506, name: `South Africa` }],
     ['ZM',	{latitude: -13.133897, longitude: 27.849332, name: `Zambia` }],
     ['ZW',	{latitude: -19.015438, longitude: 29.154857, name: `Zimbabwe` }],
-    ['SS', { latitude: 7.657229, longitude: 29.482201, name: `South Sudan` }]
+    ['SS',  {latitude: 7.657229, longitude: 29.482201, name: `South Sudan` }],
+    ['DiamondPrincess', {latitude: 27, longitude: 129, name: `Cruise ship, Diamond Princess`}],
 ]);
 
 export { countries };

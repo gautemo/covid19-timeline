@@ -27,7 +27,7 @@ const collectDay = (day, data) => {
 
     for(const [key, value] of countries){
         for(const apiCountry of data){
-            if (apiCountry.country === 'usa') apiCountry.country = 'United States';
+            specialMatch(apiCountry)
             if (value.name.toLowerCase() === apiCountry.country.toLowerCase()){
                 const exist = date.data.find(d => d.countrycode === key);
                 if(exist){
@@ -46,8 +46,40 @@ const collectDay = (day, data) => {
             }
         }
     }
+
+    // for (const apiCountry of data) {
+    //     const f = date.data.find(e => e.countrylabel.toLowerCase() === apiCountry.country.toLowerCase());
+    //     if(!f) console.log(apiCountry);
+    // }
     
     return date;
+}
+
+const specialMatch = country => {
+    if (country.province === "cayman islands") country.country = "Cayman Islands";
+    if (country.province === "montserrat") country.country ="Montserrat";
+    if (country.province === "diamond princess") country.country = "Cruise ship, Diamond Princess";
+
+    const mapper = {
+        'uae': 'United Arab Emirates',
+        'usa': 'United States',
+        'holy see': 'Vatican City',
+        'north macedonia': 'Macedonia [FYROM]',
+        'korea, south': 'South Korea',
+        'congo (kinshasa)': 'Congo [DRC]',
+        "cote d'ivoire": `Côte d'Ivoire`,
+        'uk': 'United Kingdom',
+        'congo (brazzaville)': 'Congo [Republic]',
+        'bahamas, the': 'Bahamas',
+        'bosnia': 'Bosnia and Herzegovina',
+        'taiwan*': 'Taiwan',
+        'eswatini': 'Swaziland',
+        'gambia, the': 'Gambia',
+        'cabo verde': 'Cape Verde',
+        'east timor': 'Timor-Leste',
+    }
+    const match = mapper[country.country];
+    if(match) country.country = match  
 }
 
 export { getCovid19, getCovid19Api }
