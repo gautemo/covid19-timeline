@@ -1,5 +1,5 @@
 import { reactive, computed, toRefs } from "vue";
-import { getCovid19 } from '@/api';
+import { getCovid19Api } from '@/api';
 
 const state = reactive({
     data: [],
@@ -8,7 +8,7 @@ const state = reactive({
     progress: 0,
 })
 
-const load = async () => state.data = await getCovid19();
+const load = async () => state.data = await getCovid19Api();
 
 load();
 
