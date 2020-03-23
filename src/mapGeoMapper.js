@@ -15,7 +15,7 @@ const toGeo = incident => {
         properties: {
             mag: total - recovered,
             place: incident.countrylabel,
-            url: "https://thevirustracker.com/timeline/map-data.json",
+            url: "https://corona.lmao.ninja/historical",
         },
         geometry: {
             type: "Point",
