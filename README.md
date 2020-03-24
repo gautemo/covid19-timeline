@@ -1,9 +1,6 @@
-# covid-19-map
+# covid-19-map [![Netlify Status](https://api.netlify.com/api/v1/badges/4f953111-6417-46fb-b8db-86edef562abf/deploy-status)](https://app.netlify.com/sites/covid-19-timeline/deploys) ![API tester](https://github.com/gautemo/covid19-timeline/workflows/API%20tester/badge.svg)
+
 Timeline of the spread of COVID-19. 
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4f953111-6417-46fb-b8db-86edef562abf/deploy-status)](https://app.netlify.com/sites/covid-19-timeline/deploys)
-
-![API tester](https://github.com/gautemo/covid19-timeline/workflows/API%20tester/badge.svg)
 
 ## Live
 [covid-19-timeline.netlify.com](https://covid-19-timeline.netlify.com/)
