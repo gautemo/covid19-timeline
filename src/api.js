@@ -58,7 +58,6 @@ const collectDay = (day, data) => {
 const specialMatch = country => {
     if (country.province === "cayman islands") country.country = "Cayman Islands";
     if (country.province === "montserrat") country.country ="Montserrat";
-    if (country.province === "diamond princess") country.country = "Cruise ship, Diamond Princess";
 
     const mapper = {
         'uae': 'United Arab Emirates',
