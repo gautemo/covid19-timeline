@@ -13,5 +13,4 @@ jobs:
     - name: Fetch URL
       uses: boyeborg/fetch-url-action@v1.1
       with:
-        # The url to fetch
-        url: 'https://europe-west1-covid-19-map-spread.cloudfunctions.net/getCovidDatannn'
+        url: 'https://europe-west1-covid-19-map-spread.cloudfunctions.net/getCovidData'
