@@ -1,0 +1,21 @@
+# This is a basic workflow to help you get started with Actions
+
+name: API tester
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  schedule:
+    - cron: '0 16 /1 * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.repository == 'gautemo/covid19-timeline'
+
+    steps:
+    - name: Fetch URL
+      uses: boyeborg/fetch-url-action@v1.1
+      with:
+        # The url to fetch
+        url: 'https://europe-west1-covid-19-map-spread.cloudfunctions.net/getCovidData'
