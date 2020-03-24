@@ -1,11 +1,8 @@
 name: API tester
 
 on:
-  push:
-    branches:
-      - master
-  #schedule:
-  #  - cron: '* 16 * * *'
+  schedule:
+    - cron: '0 16 * * *'
 
 jobs:
   api-test:
