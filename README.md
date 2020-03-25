@@ -41,6 +41,6 @@ The function is just a proxy over the data source to avoid CORS. The source is i
 ## Google Maps API
 Public API key is restricted to [https://covid-19-timeline.netlify.com/](https://covid-19-timeline.netlify.com/)
 
-For local development, add `VUE_APP_API_KEY=TOKEN` to a `.env.local` file with a secret key not restricted to a website.
+For local development, add `VUE_APP_API_KEY=TOKEN` to a `.env.development.local` file with a secret key not restricted to a website.
 
 Tool for styling the map: [mapstyle.withgoogle.com/](https://mapstyle.withgoogle.com/)
