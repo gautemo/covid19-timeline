@@ -2,11 +2,25 @@ import { countries } from './countries'
 
 const getCovid19 = async () => {
     const response = await fetch('https://europe-west1-covid-19-map-spread.cloudfunctions.net/getCovidData');
-    return await response.json(); 
+    const json = await response.json(); 
+    
+    const covid = [];
+    for (const stats of json.data) {
+        const day = covid.find(c => c.date === stats.date);
+        if(day){
+            day.data.push(stats);
+        }else{
+            covid.push({
+                date: stats.date,
+                data: [stats],
+            });
+        }
+    }
+    return covid.sort((a, b) => new Date(a.date) - new Date(b.date));
 }
 
 const getCovid19Api = async () => {
-    const respone = await fetch('https://corona.lmao.ninja/historical');
+    const respone = await fetch('https://corona.lmao.ninja/v2/historical'); //no longer recovered
     const data = await respone.json();
     
     const covid = []

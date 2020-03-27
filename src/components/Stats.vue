@@ -24,9 +24,9 @@ const sumBy = (arr, prop) => {
 export default {
     setup(){
         const state = useState();
-        const totalcases = computed(() => sumBy(state.day.value.data, 'totalcases'));
-        const totaldeaths = computed(() => sumBy(state.day.value.data, 'totaldeaths'));
-        const totalrecovered = computed(() => sumBy(state.day.value.data, 'totalrecovered'));
+        const totalcases = computed(() => sumBy(state.day.value.data, 'cases'));
+        const totaldeaths = computed(() => sumBy(state.day.value.data, 'deaths'));
+        const totalrecovered = computed(() => sumBy(state.day.value.data, 'recovered'));
         const infectedNow = computed(() => totalcases.value - totalrecovered.value);
         
         const format = num => new Intl.NumberFormat().format(num)

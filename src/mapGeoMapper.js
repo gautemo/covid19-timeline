@@ -7,8 +7,8 @@ const toGeo = incident => {
         return null;
     }
 
-    const total = parseInt(incident.totalcases) || 0;
-    const recovered = parseInt(incident.totalrecovered) || 0;
+    const total = parseInt(incident.cases) || 0;
+    const recovered = parseInt(incident.recovered) || 0;
 
     return {
         type: "Feature",
