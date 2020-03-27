@@ -1,0 +1,18 @@
+name: Data Source
+
+on:
+  push:
+    branches: master
+  schedule:
+    - cron: '0 16 * * *'
+
+jobs:
+  api-test:
+    runs-on: ubuntu-latest
+    if: github.repository == 'gautemo/covid19-timeline'
+
+    steps:
+    - name: Fetch URL
+      uses: boyeborg/fetch-url-action@v1.1
+      with:
+        url: 'https://europe-west1-covid-19-map-spread.cloudfunctions.net/getCovidData'

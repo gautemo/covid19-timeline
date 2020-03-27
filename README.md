@@ -1,7 +1,6 @@
-# covid-19-map
-Timeline of the spread of COVID-19. 
+# covid-19-map [![Netlify Status](https://api.netlify.com/api/v1/badges/4f953111-6417-46fb-b8db-86edef562abf/deploy-status)](https://app.netlify.com/sites/covid-19-timeline/deploys) ![Data Source](https://github.com/gautemo/covid19-timeline/workflows/Data%20Source/badge.svg)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4f953111-6417-46fb-b8db-86edef562abf/deploy-status)](https://app.netlify.com/sites/covid-19-timeline/deploys)
+Timeline of the spread of COVID-19. 
 
 ## Live
 [covid-19-timeline.netlify.com](https://covid-19-timeline.netlify.com/)
@@ -42,6 +41,6 @@ The function is just a proxy over the data source to avoid CORS. The source is i
 ## Google Maps API
 Public API key is restricted to [https://covid-19-timeline.netlify.com/](https://covid-19-timeline.netlify.com/)
 
-For local development, add `VUE_APP_API_KEY=TOKEN` to a `.env.local` file with a secret key not restricted to a website.
+For local development, add `VUE_APP_API_KEY=TOKEN` to a `.env.development.local` file with a secret key not restricted to a website.
 
 Tool for styling the map: [mapstyle.withgoogle.com/](https://mapstyle.withgoogle.com/)
