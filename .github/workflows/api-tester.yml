@@ -19,6 +19,7 @@ jobs:
         url: 'https://europe-west1-covid-19-map-spread.cloudfunctions.net/getCovidData'
         file: 'src/api/backupData.json'
     - name: Commit file to repo
+      continue-on-error: true
       run: |
         git status
         git config --local user.email "action@github.com"
