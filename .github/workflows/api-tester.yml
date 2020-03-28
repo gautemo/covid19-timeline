@@ -16,7 +16,7 @@ jobs:
     - name: Fetch Data to File
       uses: gautemo/fetch-api-data-action@1.1.0
       with:
-        url: 'https://europe-west1-covid-19-map-spread.cloudfunctionsxx.net/getCovidData'
+        url: 'https://europe-west1-covid-19-map-spread.cloudfunctions.net/getCovidData'
         file: 'cloud-functions/backupData.json'
     - name: Commit file to repo
       run: |
