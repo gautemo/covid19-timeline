@@ -1,5 +1,5 @@
 import { reactive, computed, toRefs } from "vue";
-import { getCovid19 } from '@/api';
+import { getCovid19 } from '@/api/api';
 
 const state = reactive({
     data: [],

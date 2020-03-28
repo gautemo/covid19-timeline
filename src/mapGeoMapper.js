@@ -9,11 +9,12 @@ const toGeo = incident => {
 
     const total = parseInt(incident.cases) || 0;
     const recovered = parseInt(incident.recovered) || 0;
+    const deaths = parseInt(incident.deaths) || 0;
 
     return {
         type: "Feature",
         properties: {
-            mag: total - recovered,
+            mag: total - recovered - deaths,
             place: incident.countrylabel,
         },
         geometry: {

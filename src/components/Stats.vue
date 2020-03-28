@@ -27,7 +27,7 @@ export default {
         const totalcases = computed(() => sumBy(state.day.value.data, 'cases'));
         const totaldeaths = computed(() => sumBy(state.day.value.data, 'deaths'));
         const totalrecovered = computed(() => sumBy(state.day.value.data, 'recovered'));
-        const infectedNow = computed(() => totalcases.value - totalrecovered.value);
+        const infectedNow = computed(() => totalcases.value - totalrecovered.value - totaldeaths.value);
         
         const format = num => new Intl.NumberFormat().format(num)
 
