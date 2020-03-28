@@ -30,4 +30,4 @@ jobs:
         # git config --local user.email "action@github.com"
         # git config --local user.name "GitHub Action"
         # git commit -m "GitHub Action, daily backup of API data" -a
-        # git push https://gautemo:${{ secrets.MY_GITHUB_TOKEN }}@github.com/gautemo/covid19-timeline.git
+        # git push https://${{ secrets.MY_GITHUB_TOKEN }}@github.com/gautemo/covid19-timeline.git
