@@ -2,7 +2,7 @@ import backup from '@/api/backupData.json'
 
 const getCovid19 = async () => {
     try{
-        const response = await fetch('https://europe-west1-covid-19-map-spread.cloudfunctionsxx.net/getCovidData');
+        const response = await fetch('https://europe-west1-covid-19-map-spread.cloudfunctions.net/getCovidData');
         const json = await response.json(); 
         return convertData(json.data);
     }catch{
