@@ -22,6 +22,8 @@ jobs:
         ENDPOINT: 'https://europe-west1-covid-19-map-spread.cloudfunctions.net/getCovidData'
         SAVE_LOCATION: 'cloud-functions'
         SAVE_NAME: 'backupData'
+    - name: Set env
+      run: echo ::set-env name=FETCH_API_DATA::''
     - name: Commit file to repo
       run: |
         git status
