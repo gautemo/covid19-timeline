@@ -26,6 +26,8 @@ jobs:
       env: 
         FETCH_API_DATA: empty
     - name: Commit file to repo
+      env: 
+        FETCH_API_DATA: empty
       run: |
         git status
         git config --local user.email "action@github.com"
