@@ -30,4 +30,7 @@ jobs:
         # git config --local user.email "action@github.com"
         # git config --local user.name "GitHub Action"
         # git commit -m "GitHub Action, daily backup of API data" -a
-        # git push
+    - name: GitHub Push
+      uses: ad-m/github-push-action@v0.5.0
+      with:
+        github_token: ${{ secrets.MY_GITHUB_TOKEN }}
