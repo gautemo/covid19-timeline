@@ -24,7 +24,7 @@ jobs:
         SAVE_NAME: 'backupData'
     - name: Commit file to repo
       env: |
-        FETCH_API_DATA:''
+        FETCH_API_DATA:'empty'
       run: |
         git status
         # git config --local user.email "action@github.com"
