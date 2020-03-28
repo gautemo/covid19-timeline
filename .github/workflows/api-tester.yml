@@ -16,18 +16,13 @@ jobs:
       uses: boyeborg/fetch-url-action@v1.1
       with:
         url: 'https://europe-west1-covid-19-map-spread.cloudfunctions.net/getCovidData'
-    - name: Fetch API Data
-      uses: JamesIves/fetch-api-data-action@1.0.4
+    - name: Fetch data to file
+      uses: gautemo/fetch-api-data-action@1.0.1
       with:
-        ENDPOINT: 'https://europe-west1-covid-19-map-spread.cloudfunctions.net/getCovidData'
-        SAVE_LOCATION: 'cloud-functions'
-        SAVE_NAME: 'backupData'
+        url: 'https://europe-west1-covid-19-map-spread.cloudfunctions.net/getCovidData'
+        file: 'cloud-functions/backupData.json'
     - uses: actions/checkout@v2
-      env: 
-        FETCH_API_DATA: empty
     - name: Commit file to repo
-      env: 
-        FETCH_API_DATA: empty
       run: |
         git status
         git config --local user.email "action@github.com"
