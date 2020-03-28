@@ -14,9 +14,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Fetch Data to File
-      uses: gautemo/fetch-api-data-action@1.0.4
+      uses: gautemo/fetch-api-data-action@1.0.5
       with:
-        url: 'https://europe-west1-covid-19-map-spread.cloudfunctions.net/getCovidData'
+        url: 'https://europe-west1-covid-19-map-spread.cloudfunctions.net/getCovidDataxx'
         file: 'cloud-functions/backupData.json'
     - name: Commit file to repo
       run: |
