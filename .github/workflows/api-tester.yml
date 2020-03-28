@@ -16,8 +16,8 @@ jobs:
       uses: boyeborg/fetch-url-action@v1.1
       with:
         url: 'https://europe-west1-covid-19-map-spread.cloudfunctions.net/getCovidData'
-    - name: Fetch data to file
-      uses: gautemo/fetch-api-data-action@1.0.1
+    - name: Fetch Data to File
+      uses: gautemo/fetch-api-data-action@1.0.2
       with:
         url: 'https://europe-west1-covid-19-map-spread.cloudfunctions.net/getCovidData'
         file: 'cloud-functions/backupData.json'
