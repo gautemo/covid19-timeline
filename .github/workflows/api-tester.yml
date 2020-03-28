@@ -23,9 +23,9 @@ jobs:
         SAVE_LOCATION: 'cloud-functions'
         SAVE_NAME: 'backupData'
     - uses: actions/checkout@v2
-    - name: Commit file to repo
       env: 
         FETCH_API_DATA: empty
+    - name: Commit file to repo
       run: |
         git status
         git config --local user.email "action@github.com"
