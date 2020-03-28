@@ -22,9 +22,10 @@ jobs:
         ENDPOINT: 'https://europe-west1-covid-19-map-spread.cloudfunctions.net/getCovidData'
         SAVE_LOCATION: 'cloud-functions'
         SAVE_NAME: 'backupData'
-    - name: Commit files
+    - name: Commit file to repo
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git commit -m "GitHub Action, daily backup of API data" -a
-        git push https://gautemo:${{ secrets.MY_GITHUB_TOKEN }}github.com/gautemo/covid19-timeline.git
+        git status
+        # git config --local user.email "action@github.com"
+        # git config --local user.name "GitHub Action"
+        # git commit -m "GitHub Action, daily backup of API data" -a
+        # git push https://gautemo:${{ secrets.MY_GITHUB_TOKEN }}@github.com/gautemo/covid19-timeline.git
