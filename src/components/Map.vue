@@ -10,6 +10,7 @@ import { toGeo } from '@/mapGeoMapper'
 export default {
   setup() {
     const map = ref({});
+    const circles = ref([]);
 
     const loadMap = () => {
       map.value = new google.maps.Map(document.getElementById("map"), {
@@ -41,13 +42,20 @@ export default {
     document.head.appendChild(script);
 
     const state = useState();
-    watch(state.day, () => {
+    watch(state.day, (newVal, oldVal) => {
+      if(newVal && oldVal){
+        const oldDate = new Date(oldVal.date);
+        const newDate = new Date(newVal.date);
+        if(newDate.getTime() < oldDate.getTime()){
+          circles.value.forEach(c => c.setGeometry(null));
+        }
+      }
       if(Object.keys(map.value).length > 0){
         const featureCollection = {
           type: "FeatureCollection",
           features: state.day.value.data.map(toGeo).filter(g => g),
         }
-        map.value.data.addGeoJson(featureCollection)
+        circles.value = map.value.data.addGeoJson(featureCollection)
       }
     })
 
