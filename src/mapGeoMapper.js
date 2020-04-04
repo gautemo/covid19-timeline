@@ -24,7 +24,7 @@ const toGeo = incident => {
                 country.latitude,
             ]
         },
-        id: incident.countrycode
+        id: incident.countrycode,
     }
 }
 

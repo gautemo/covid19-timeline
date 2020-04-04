@@ -6,10 +6,13 @@
 import { onMounted, watch, ref } from "vue";
 import { useState } from '@/state.js';
 import { toGeo } from '@/mapGeoMapper'
+import { countries } from '@/countries'
+import { getArrowText } from '@/arrows.js';
 
 export default {
   setup() {
     const map = ref({});
+    const info = ref({})
     const circles = ref([]);
 
     const loadMap = () => {
@@ -32,6 +35,9 @@ export default {
             }
           };
         });
+
+      info.value = new google.maps.InfoWindow({})
+      map.value.data.addListener('click', (mapEvent) => openInfoWindow(mapEvent))
     };
 
     const script = document.createElement('script');
@@ -42,6 +48,48 @@ export default {
     document.head.appendChild(script);
 
     const state = useState();
+
+    const openInfoWindow = mapEvent => {      
+      info.value.setPosition(mapEvent.latLng);
+      info.value.countrycode = mapEvent.feature.o;
+      updateInfoWindow(mapEvent.feature.o)
+      info.value.open(map.value)
+    }
+
+    const updateInfoWindow = countrycode => {
+      const incident = state.day.value.data.find(i => i.countrycode === countrycode);
+      if(!incident){
+        info.value.close();
+        return;
+      }
+      const total = parseInt(incident.cases) || 0;
+      const recovered = parseInt(incident.recovered) || 0;
+      const deaths = parseInt(incident.deaths) || 0;
+      const current = total - recovered - deaths;
+
+      let prevIncident = state.prevDay.value.data.find(i => i.countrycode === countrycode);
+      if(!prevIncident){
+        prevIncident = {
+          cases: 0,
+          deaths: 0,
+          recovered: 0,
+        }
+      }
+      const prevTotal = parseInt(prevIncident.cases) || 0;
+      const prevRecovered = parseInt(prevIncident.recovered) || 0;
+      const prevDeaths = parseInt(prevIncident.deaths) || 0;
+      const prevCurrent = prevTotal - prevRecovered - prevDeaths;      
+
+      const { name } = countries.get(countrycode);
+      info.value.setContent(`
+        <h2 class="info-box">${name}</h2>
+        <p class="info-box">Current Infected: <span class="red">${current}</span> ${getArrowText(prevCurrent, current, true)}</p>
+        <p class="info-box">Cases: ${total} ${getArrowText(prevTotal, total, true)}</p>
+        <p class="info-box">Recovered: ${recovered} ${getArrowText(prevRecovered, recovered, true, true)}</p>
+        <p class="info-box">Deaths: ${deaths} ${getArrowText(prevDeaths, deaths, true)}</p>
+      `);
+    }
+
     watch(state.day, (newVal, oldVal) => {
       if(newVal && oldVal){
         const oldDate = new Date(oldVal.date);
@@ -56,6 +104,9 @@ export default {
           features: state.day.value.data.map(toGeo).filter(g => g),
         }
         circles.value = map.value.data.addGeoJson(featureCollection)
+      }
+      if(info.value.countrycode){
+        updateInfoWindow(info.value.countrycode)
       }
     })
 
@@ -322,5 +373,24 @@ const darkMapStyle = [
 <style scoped>
 #map{
   flex: 1;
+}
+
+#map >>> .info-box{
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+#map >>> .info-box .red{
+  border-bottom: 2px solid #d21921;
+  border-radius: 1px;
+}
+
+#map >>> .info-box .color-red{
+  color: #d21921;
+}
+
+#map >>> .info-box .color-green{
+  color: #159c33;
 }
 </style>
