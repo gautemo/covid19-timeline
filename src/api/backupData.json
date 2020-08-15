@@ -39728,7 +39728,7 @@
     {
       "countrycode": "FR",
       "date": "1/24/20",
-      "cases": "2",
+      "cases": "0",
       "deaths": "0",
       "recovered": "0"
     },
@@ -39756,14 +39756,14 @@
     {
       "countrycode": "FR",
       "date": "1/28/20",
-      "cases": "4",
+      "cases": "3",
       "deaths": "0",
       "recovered": "0"
     },
     {
       "countrycode": "FR",
       "date": "1/29/20",
-      "cases": "5",
+      "cases": "4",
       "deaths": "0",
       "recovered": "0"
     },
@@ -39777,7 +39777,7 @@
     {
       "countrycode": "FR",
       "date": "1/31/20",
-      "cases": "5",
+      "cases": "6",
       "deaths": "0",
       "recovered": "0"
     },
@@ -39882,14 +39882,14 @@
     {
       "countrycode": "FR",
       "date": "2/15/20",
-      "cases": "12",
+      "cases": "11",
       "deaths": "1",
       "recovered": "4"
     },
     {
       "countrycode": "FR",
       "date": "2/16/20",
-      "cases": "12",
+      "cases": "11",
       "deaths": "1",
       "recovered": "4"
     },
@@ -39952,721 +39952,721 @@
     {
       "countrycode": "FR",
       "date": "2/25/20",
-      "cases": "14",
+      "cases": "12",
       "deaths": "1",
       "recovered": "11"
     },
     {
       "countrycode": "FR",
       "date": "2/26/20",
-      "cases": "18",
+      "cases": "14",
       "deaths": "2",
       "recovered": "11"
     },
     {
       "countrycode": "FR",
       "date": "2/27/20",
-      "cases": "38",
+      "cases": "17",
       "deaths": "2",
       "recovered": "11"
     },
     {
       "countrycode": "FR",
       "date": "2/28/20",
-      "cases": "57",
+      "cases": "38",
       "deaths": "2",
       "recovered": "11"
     },
     {
       "countrycode": "FR",
       "date": "2/29/20",
-      "cases": "100",
+      "cases": "57",
       "deaths": "2",
       "recovered": "12"
     },
     {
       "countrycode": "FR",
       "date": "3/01/20",
-      "cases": "130",
+      "cases": "100",
       "deaths": "2",
       "recovered": "12"
     },
     {
       "countrycode": "FR",
       "date": "3/02/20",
-      "cases": "191",
+      "cases": "130",
       "deaths": "3",
       "recovered": "12"
     },
     {
       "countrycode": "FR",
       "date": "3/03/20",
-      "cases": "204",
+      "cases": "178",
       "deaths": "4",
       "recovered": "12"
     },
     {
       "countrycode": "FR",
       "date": "3/04/20",
-      "cases": "288",
+      "cases": "212",
       "deaths": "4",
       "recovered": "12"
     },
     {
       "countrycode": "FR",
       "date": "3/05/20",
-      "cases": "380",
+      "cases": "285",
       "deaths": "6",
       "recovered": "12"
     },
     {
       "countrycode": "FR",
       "date": "3/06/20",
-      "cases": "656",
+      "cases": "423",
       "deaths": "9",
       "recovered": "12"
     },
     {
       "countrycode": "FR",
       "date": "3/07/20",
-      "cases": "959",
+      "cases": "613",
       "deaths": "11",
       "recovered": "12"
     },
     {
       "countrycode": "FR",
       "date": "3/08/20",
-      "cases": "1136",
+      "cases": "716",
       "deaths": "19",
       "recovered": "12"
     },
     {
       "countrycode": "FR",
       "date": "3/09/20",
-      "cases": "1219",
+      "cases": "1126",
       "deaths": "19",
       "recovered": "12"
     },
     {
       "countrycode": "FR",
       "date": "3/10/20",
-      "cases": "1794",
+      "cases": "1412",
       "deaths": "33",
       "recovered": "12"
     },
     {
       "countrycode": "FR",
       "date": "3/11/20",
-      "cases": "2293",
+      "cases": "1784",
       "deaths": "48",
       "recovered": "12"
     },
     {
       "countrycode": "FR",
       "date": "3/12/20",
-      "cases": "2293",
+      "cases": "2281",
       "deaths": "48",
       "recovered": "12"
     },
     {
       "countrycode": "FR",
       "date": "3/13/20",
-      "cases": "3681",
+      "cases": "2876",
       "deaths": "78",
       "recovered": "12"
     },
     {
       "countrycode": "FR",
       "date": "3/14/20",
-      "cases": "4496",
+      "cases": "3661",
       "deaths": "90",
       "recovered": "12"
     },
     {
       "countrycode": "FR",
       "date": "3/15/20",
-      "cases": "4532",
+      "cases": "4499",
       "deaths": "90",
       "recovered": "12"
     },
     {
       "countrycode": "FR",
       "date": "3/16/20",
-      "cases": "6683",
+      "cases": "5423",
       "deaths": "148",
       "recovered": "12"
     },
     {
       "countrycode": "FR",
       "date": "3/17/20",
-      "cases": "7715",
+      "cases": "6633",
       "deaths": "148",
       "recovered": "12"
     },
     {
       "countrycode": "FR",
       "date": "3/18/20",
-      "cases": "9124",
+      "cases": "7730",
       "deaths": "148",
       "recovered": "12"
     },
     {
       "countrycode": "FR",
       "date": "3/19/20",
-      "cases": "10970",
+      "cases": "9134",
       "deaths": "242",
       "recovered": "12"
     },
     {
       "countrycode": "FR",
       "date": "3/20/20",
-      "cases": "12758",
+      "cases": "10995",
       "deaths": "448",
       "recovered": "12"
     },
     {
       "countrycode": "FR",
       "date": "3/21/20",
-      "cases": "14463",
+      "cases": "12612",
       "deaths": "559",
       "recovered": "12"
     },
     {
       "countrycode": "FR",
       "date": "3/22/20",
-      "cases": "16243",
+      "cases": "14459",
       "deaths": "671",
       "recovered": "2206"
     },
     {
       "countrycode": "FR",
       "date": "3/23/20",
-      "cases": "20123",
+      "cases": "16018",
       "deaths": "855",
       "recovered": "2206"
     },
     {
       "countrycode": "FR",
       "date": "3/24/20",
-      "cases": "22622",
+      "cases": "19856",
       "deaths": "1094",
       "recovered": "3250"
     },
     {
       "countrycode": "FR",
       "date": "3/25/20",
-      "cases": "25600",
+      "cases": "22302",
       "deaths": "1323",
       "recovered": "3907"
     },
     {
       "countrycode": "FR",
       "date": "3/26/20",
-      "cases": "29551",
+      "cases": "25233",
       "deaths": "1685",
       "recovered": "4955"
     },
     {
       "countrycode": "FR",
       "date": "3/27/20",
-      "cases": "33402",
+      "cases": "29155",
       "deaths": "1982",
       "recovered": "5707"
     },
     {
       "countrycode": "FR",
       "date": "3/28/20",
-      "cases": "38105",
+      "cases": "32964",
       "deaths": "2299",
       "recovered": "5724"
     },
     {
       "countrycode": "FR",
       "date": "3/29/20",
-      "cases": "40708",
+      "cases": "37575",
       "deaths": "2591",
       "recovered": "7226"
     },
     {
       "countrycode": "FR",
       "date": "3/30/20",
-      "cases": "45170",
+      "cases": "40174",
       "deaths": "3007",
       "recovered": "7964"
     },
     {
       "countrycode": "FR",
       "date": "3/31/20",
-      "cases": "52827",
+      "cases": "44550",
       "deaths": "3505",
       "recovered": "9513"
     },
     {
       "countrycode": "FR",
       "date": "4/01/20",
-      "cases": "57749",
+      "cases": "52128",
       "deaths": "4012",
       "recovered": "11053"
     },
     {
       "countrycode": "FR",
       "date": "4/02/20",
-      "cases": "59929",
+      "cases": "56989",
       "deaths": "5357",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/03/20",
-      "cases": "65202",
+      "cases": "59105",
       "deaths": "6470",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/04/20",
-      "cases": "69500",
+      "cases": "64338",
       "deaths": "7516",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/05/20",
-      "cases": "71412",
+      "cases": "68605",
       "deaths": "8031",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/06/20",
-      "cases": "75343",
+      "cases": "70478",
       "deaths": "8857",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/07/20",
-      "cases": "79163",
+      "cases": "74390",
       "deaths": "10264",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/08/20",
-      "cases": "83057",
+      "cases": "78167",
       "deaths": "10803",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/09/20",
-      "cases": "87366",
+      "cases": "82048",
       "deaths": "12134",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/10/20",
-      "cases": "91738",
+      "cases": "86334",
       "deaths": "13113",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/11/20",
-      "cases": "94863",
+      "cases": "90676",
       "deaths": "13745",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/12/20",
-      "cases": "121712",
+      "cases": "93790",
       "deaths": "14301",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/13/20",
-      "cases": "125394",
+      "cases": "95403",
       "deaths": "14871",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/14/20",
-      "cases": "130365",
+      "cases": "98076",
       "deaths": "15627",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/15/20",
-      "cases": "133585",
+      "cases": "103573",
       "deaths": "17056",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/16/20",
-      "cases": "146075",
+      "cases": "106206",
       "deaths": "17803",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/17/20",
-      "cases": "148084",
+      "cases": "108847",
       "deaths": "18559",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/18/20",
-      "cases": "148086",
+      "cases": "109252",
       "deaths": "19196",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/19/20",
-      "cases": "153011",
+      "cases": "111821",
       "deaths": "19592",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/20/20",
-      "cases": "155393",
+      "cases": "112606",
       "deaths": "20136",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/21/20",
-      "cases": "158168",
+      "cases": "114657",
       "deaths": "20669",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/22/20",
-      "cases": "155980",
+      "cases": "117324",
       "deaths": "21209",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/23/20",
-      "cases": "158303",
+      "cases": "119151",
       "deaths": "21721",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/24/20",
-      "cases": "159952",
+      "cases": "120804",
       "deaths": "22107",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/25/20",
-      "cases": "161644",
+      "cases": "122577",
       "deaths": "22474",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/26/20",
-      "cases": "162220",
+      "cases": "124114",
       "deaths": "22714",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/27/20",
-      "cases": "165963",
+      "cases": "124575",
       "deaths": "23148",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/28/20",
-      "cases": "169053",
+      "cases": "125770",
       "deaths": "23512",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/29/20",
-      "cases": "166543",
+      "cases": "126835",
       "deaths": "23936",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "4/30/20",
-      "cases": "167299",
+      "cases": "128442",
       "deaths": "24222",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/01/20",
-      "cases": "167305",
+      "cases": "129581",
       "deaths": "24439",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/02/20",
-      "cases": "168518",
+      "cases": "130185",
       "deaths": "24573",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/03/20",
-      "cases": "168925",
+      "cases": "130979",
       "deaths": "24707",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/04/20",
-      "cases": "169583",
+      "cases": "131287",
       "deaths": "25010",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/05/20",
-      "cases": "170687",
+      "cases": "131863",
       "deaths": "25341",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/06/20",
-      "cases": "174224",
+      "cases": "132967",
       "deaths": "25614",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/07/20",
-      "cases": "174918",
+      "cases": "137150",
       "deaths": "25790",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/08/20",
-      "cases": "176202",
+      "cases": "137779",
       "deaths": "26031",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/09/20",
-      "cases": "176782",
+      "cases": "138421",
       "deaths": "26111",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/10/20",
-      "cases": "177094",
+      "cases": "138854",
       "deaths": "26180",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/11/20",
-      "cases": "177547",
+      "cases": "139063",
       "deaths": "26441",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/12/20",
-      "cases": "178349",
+      "cases": "139519",
       "deaths": "26787",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/13/20",
-      "cases": "178184",
+      "cases": "140227",
       "deaths": "26869",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/14/20",
-      "cases": "178994",
+      "cases": "140734",
       "deaths": "27217",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/15/20",
-      "cases": "179630",
+      "cases": "141356",
       "deaths": "27320",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/16/20",
-      "cases": "179630",
+      "cases": "141919",
       "deaths": "27320",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/17/20",
-      "cases": "179693",
+      "cases": "142291",
       "deaths": "27895",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/18/20",
-      "cases": "180051",
+      "cases": "142411",
       "deaths": "28025",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/19/20",
-      "cases": "180933",
+      "cases": "142903",
       "deaths": "28025",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/20/20",
-      "cases": "181700",
+      "cases": "143427",
       "deaths": "28135",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/21/20",
-      "cases": "181951",
+      "cases": "143845",
       "deaths": "28218",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/22/20",
-      "cases": "182354",
+      "cases": "144163",
       "deaths": "28218",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/23/20",
-      "cases": "182694",
+      "cases": "144566",
       "deaths": "28218",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/24/20",
-      "cases": "182709",
+      "cases": "144806",
       "deaths": "28370",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/25/20",
-      "cases": "183067",
+      "cases": "144921",
       "deaths": "28460",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/26/20",
-      "cases": "182847",
+      "cases": "145279",
       "deaths": "28533",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/27/20",
-      "cases": "183038",
+      "cases": "145555",
       "deaths": "28599",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/28/20",
-      "cases": "186364",
+      "cases": "145746",
       "deaths": "28665",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/29/20",
-      "cases": "186923",
+      "cases": "149071",
       "deaths": "28717",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/30/20",
-      "cases": "188752",
+      "cases": "149668",
       "deaths": "28774",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "5/31/20",
-      "cases": "189009",
+      "cases": "151496",
       "deaths": "28805",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "6/01/20",
-      "cases": "189348",
+      "cases": "151753",
       "deaths": "28836",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "6/02/20",
-      "cases": "188582",
+      "cases": "152091",
       "deaths": "28943",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "6/03/20",
-      "cases": "188934",
+      "cases": "151325",
       "deaths": "29024",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "6/04/20",
-      "cases": "189701",
+      "cases": "151677",
       "deaths": "29068",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "6/05/20",
-      "cases": "190312",
+      "cases": "152444",
       "deaths": "29114",
       "recovered": "2201"
     },
     {
       "countrycode": "FR",
       "date": "6/06/20",
-      "cases": "190891",
+      "cases": "153055",
       "deaths": "29145",
       "recovered": "2201"
     },
@@ -124316,7 +124316,7 @@
     {
       "countrycode": "FR",
       "date": "6/07/20",
-      "cases": "191234",
+      "cases": "153634",
       "deaths": "29158",
       "recovered": "2201"
     },
@@ -125639,7 +125639,7 @@
     {
       "countrycode": "FR",
       "date": "6/08/20",
-      "cases": "191445",
+      "cases": "153977",
       "deaths": "29212",
       "recovered": "2201"
     },
@@ -126962,7 +126962,7 @@
     {
       "countrycode": "FR",
       "date": "6/09/20",
-      "cases": "191849",
+      "cases": "154188",
       "deaths": "29299",
       "recovered": "2201"
     },
@@ -128285,7 +128285,7 @@
     {
       "countrycode": "FR",
       "date": "6/10/20",
-      "cases": "192394",
+      "cases": "154591",
       "deaths": "29322",
       "recovered": "2201"
     },
@@ -129601,7 +129601,7 @@
     {
       "countrycode": "FR",
       "date": "6/11/20",
-      "cases": "192819",
+      "cases": "155136",
       "deaths": "29349",
       "recovered": "2201"
     },
@@ -130924,7 +130924,7 @@
     {
       "countrycode": "FR",
       "date": "6/12/20",
-      "cases": "193546",
+      "cases": "155561",
       "deaths": "29377",
       "recovered": "2201"
     },
@@ -132247,7 +132247,7 @@
     {
       "countrycode": "FR",
       "date": "6/13/20",
-      "cases": "194072",
+      "cases": "156287",
       "deaths": "29401",
       "recovered": "2201"
     },
@@ -133570,7 +133570,7 @@
     {
       "countrycode": "FR",
       "date": "6/14/20",
-      "cases": "194479",
+      "cases": "156813",
       "deaths": "29410",
       "recovered": "2201"
     },
@@ -134893,7 +134893,7 @@
     {
       "countrycode": "FR",
       "date": "6/15/20",
-      "cases": "194631",
+      "cases": "157220",
       "deaths": "29439",
       "recovered": "2201"
     },
@@ -136216,7 +136216,7 @@
     {
       "countrycode": "FR",
       "date": "6/16/20",
-      "cases": "194975",
+      "cases": "157372",
       "deaths": "29550",
       "recovered": "2201"
     },
@@ -137539,7 +137539,7 @@
     {
       "countrycode": "FR",
       "date": "6/17/20",
-      "cases": "195433",
+      "cases": "157716",
       "deaths": "29578",
       "recovered": "2201"
     },
@@ -138862,7 +138862,7 @@
     {
       "countrycode": "FR",
       "date": "6/18/20",
-      "cases": "195900",
+      "cases": "158174",
       "deaths": "29606",
       "recovered": "2201"
     },
@@ -140185,7 +140185,7 @@
     {
       "countrycode": "FR",
       "date": "6/19/20",
-      "cases": "196711",
+      "cases": "158641",
       "deaths": "29620",
       "recovered": "2201"
     },
@@ -141508,7 +141508,7 @@
     {
       "countrycode": "FR",
       "date": "6/20/20",
-      "cases": "197352",
+      "cases": "159452",
       "deaths": "29636",
       "recovered": "2201"
     },
@@ -142831,7 +142831,7 @@
     {
       "countrycode": "FR",
       "date": "6/21/20",
-      "cases": "197636",
+      "cases": "160093",
       "deaths": "29643",
       "recovered": "2201"
     },
@@ -144154,7 +144154,7 @@
     {
       "countrycode": "FR",
       "date": "6/22/20",
-      "cases": "198009",
+      "cases": "160377",
       "deaths": "29666",
       "recovered": "2201"
     },
@@ -145477,7 +145477,7 @@
     {
       "countrycode": "FR",
       "date": "6/23/20",
-      "cases": "198526",
+      "cases": "160750",
       "deaths": "29723",
       "recovered": "2201"
     },
@@ -146800,7 +146800,7 @@
     {
       "countrycode": "FR",
       "date": "6/24/20",
-      "cases": "198607",
+      "cases": "161267",
       "deaths": "29734",
       "recovered": "2201"
     },
@@ -148123,7 +148123,7 @@
     {
       "countrycode": "FR",
       "date": "6/25/20",
-      "cases": "198607",
+      "cases": "161348",
       "deaths": "29755",
       "recovered": "2201"
     },
@@ -149446,7 +149446,7 @@
     {
       "countrycode": "FR",
       "date": "6/26/20",
-      "cases": "200195",
+      "cases": "161348",
       "deaths": "29781",
       "recovered": "2201"
     },
@@ -150769,7 +150769,7 @@
     {
       "countrycode": "FR",
       "date": "6/27/20",
-      "cases": "200195",
+      "cases": "162936",
       "deaths": "29781",
       "recovered": "2201"
     },
@@ -152092,7 +152092,7 @@
     {
       "countrycode": "FR",
       "date": "6/28/20",
-      "cases": "199476",
+      "cases": "162936",
       "deaths": "29781",
       "recovered": "2201"
     },
@@ -153415,7 +153415,7 @@
     {
       "countrycode": "FR",
       "date": "6/29/20",
-      "cases": "201522",
+      "cases": "162936",
       "deaths": "29816",
       "recovered": "2201"
     },
@@ -154395,7 +154395,7 @@
     {
       "countrycode": "FR",
       "date": "6/30/20",
-      "cases": "202063",
+      "cases": "164260",
       "deaths": "29846",
       "recovered": "2201"
     },
@@ -155718,7 +155718,7 @@
     {
       "countrycode": "FR",
       "date": "7/01/20",
-      "cases": "202981",
+      "cases": "164801",
       "deaths": "29864",
       "recovered": "2201"
     },
@@ -157048,7 +157048,7 @@
     {
       "countrycode": "FR",
       "date": "7/02/20",
-      "cases": "203640",
+      "cases": "165719",
       "deaths": "29878",
       "recovered": "2201"
     },
@@ -158371,7 +158371,7 @@
     {
       "countrycode": "FR",
       "date": "7/03/20",
-      "cases": "204222",
+      "cases": "166378",
       "deaths": "29896",
       "recovered": "2201"
     },
@@ -159694,7 +159694,7 @@
     {
       "countrycode": "FR",
       "date": "7/04/20",
-      "cases": "204222",
+      "cases": "166960",
       "deaths": "29896",
       "recovered": "2201"
     },
@@ -161017,7 +161017,7 @@
     {
       "countrycode": "FR",
       "date": "7/05/20",
-      "cases": "204222",
+      "cases": "166960",
       "deaths": "29896",
       "recovered": "2201"
     },
@@ -162095,7 +162095,7 @@
     {
       "countrycode": "FR",
       "date": "7/06/20",
-      "cases": "205597",
+      "cases": "166960",
       "deaths": "29923",
       "recovered": "2201"
     },
@@ -163418,7 +163418,7 @@
     {
       "countrycode": "FR",
       "date": "7/07/20",
-      "cases": "206072",
+      "cases": "168335",
       "deaths": "29936",
       "recovered": "77780"
     },
@@ -164741,7 +164741,7 @@
     {
       "countrycode": "FR",
       "date": "7/08/20",
-      "cases": "206072",
+      "cases": "168810",
       "deaths": "29936",
       "recovered": "77780"
     },
@@ -166064,7 +166064,7 @@
     {
       "countrycode": "FR",
       "date": "7/09/20",
-      "cases": "207356",
+      "cases": "169473",
       "deaths": "29982",
       "recovered": "77780"
     },
@@ -167387,7 +167387,7 @@
     {
       "countrycode": "FR",
       "date": "7/10/20",
-      "cases": "208015",
+      "cases": "170094",
       "deaths": "30007",
       "recovered": "77780"
     },
@@ -168710,7 +168710,7 @@
     {
       "countrycode": "FR",
       "date": "7/11/20",
-      "cases": "208015",
+      "cases": "170752",
       "deaths": "30007",
       "recovered": "77780"
     },
@@ -170033,7 +170033,7 @@
     {
       "countrycode": "FR",
       "date": "7/12/20",
-      "cases": "208015",
+      "cases": "170752",
       "deaths": "30007",
       "recovered": "77780"
     },
@@ -171356,7 +171356,7 @@
     {
       "countrycode": "FR",
       "date": "7/13/20",
-      "cases": "209640",
+      "cases": "170752",
       "deaths": "30032",
       "recovered": "77780"
     },
@@ -172679,7 +172679,7 @@
     {
       "countrycode": "FR",
       "date": "7/14/20",
-      "cases": "209640",
+      "cases": "172377",
       "deaths": "30032",
       "recovered": "77780"
     },
@@ -174002,7 +174002,7 @@
     {
       "countrycode": "FR",
       "date": "7/15/20",
-      "cases": "210568",
+      "cases": "172377",
       "deaths": "30123",
       "recovered": "77780"
     },
@@ -175325,7 +175325,7 @@
     {
       "countrycode": "FR",
       "date": "7/16/20",
-      "cases": "211102",
+      "cases": "173304",
       "deaths": "30141",
       "recovered": "77780"
     },
@@ -176648,7 +176648,7 @@
     {
       "countrycode": "FR",
       "date": "7/17/20",
-      "cases": "211943",
+      "cases": "173838",
       "deaths": "30155",
       "recovered": "77780"
     },
@@ -177971,7 +177971,7 @@
     {
       "countrycode": "FR",
       "date": "7/18/20",
-      "cases": "211943",
+      "cases": "174674",
       "deaths": "30155",
       "recovered": "77780"
     },
@@ -179294,7 +179294,7 @@
     {
       "countrycode": "FR",
       "date": "7/19/20",
-      "cases": "211943",
+      "cases": "174674",
       "deaths": "30155",
       "recovered": "77780"
     },
@@ -180617,7 +180617,7 @@
     {
       "countrycode": "FR",
       "date": "7/20/20",
-      "cases": "214023",
+      "cases": "174674",
       "deaths": "30180",
       "recovered": "77780"
     },
@@ -181940,7 +181940,7 @@
     {
       "countrycode": "FR",
       "date": "7/21/20",
-      "cases": "214607",
+      "cases": "176754",
       "deaths": "30168",
       "recovered": "77780"
     },
@@ -183263,7 +183263,7 @@
     {
       "countrycode": "FR",
       "date": "7/22/20",
-      "cases": "215605",
+      "cases": "177338",
       "deaths": "30175",
       "recovered": "77780"
     },
@@ -184586,7 +184586,7 @@
     {
       "countrycode": "FR",
       "date": "7/23/20",
-      "cases": "216667",
+      "cases": "178336",
       "deaths": "30185",
       "recovered": "77780"
     },
@@ -185909,7 +185909,7 @@
     {
       "countrycode": "FR",
       "date": "7/24/20",
-      "cases": "217797",
+      "cases": "179398",
       "deaths": "30195",
       "recovered": "77780"
     },
@@ -187232,7 +187232,7 @@
     {
       "countrycode": "FR",
       "date": "7/25/20",
-      "cases": "217801",
+      "cases": "180528",
       "deaths": "30195",
       "recovered": "77780"
     },
@@ -188555,7 +188555,7 @@
     {
       "countrycode": "FR",
       "date": "7/26/20",
-      "cases": "217801",
+      "cases": "180528",
       "deaths": "30195",
       "recovered": "77780"
     },
@@ -189878,7 +189878,7 @@
     {
       "countrycode": "FR",
       "date": "7/27/20",
-      "cases": "220352",
+      "cases": "180528",
       "deaths": "30195",
       "recovered": "77780"
     },
@@ -191201,7 +191201,7 @@
     {
       "countrycode": "FR",
       "date": "7/28/20",
-      "cases": "221077",
+      "cases": "183079",
       "deaths": "30212",
       "recovered": "77780"
     },
@@ -192524,7 +192524,7 @@
     {
       "countrycode": "FR",
       "date": "7/29/20",
-      "cases": "221077",
+      "cases": "183804",
       "deaths": "30226",
       "recovered": "77780"
     },
@@ -193847,7 +193847,7 @@
     {
       "countrycode": "FR",
       "date": "7/30/20",
-      "cases": "222469",
+      "cases": "185196",
       "deaths": "30241",
       "recovered": "77780"
     },
@@ -195170,7 +195170,7 @@
     {
       "countrycode": "FR",
       "date": "7/31/20",
-      "cases": "225197",
+      "cases": "186573",
       "deaths": "30268",
       "recovered": "77780"
     },
@@ -196493,7 +196493,7 @@
     {
       "countrycode": "FR",
       "date": "8/01/20",
-      "cases": "225198",
+      "cases": "187919",
       "deaths": "30268",
       "recovered": "77780"
     },
@@ -197823,7 +197823,7 @@
     {
       "countrycode": "FR",
       "date": "8/02/20",
-      "cases": "225198",
+      "cases": "187919",
       "deaths": "30268",
       "recovered": "77780"
     },
@@ -199146,7 +199146,7 @@
     {
       "countrycode": "FR",
       "date": "8/03/20",
-      "cases": "225198",
+      "cases": "187919",
       "deaths": "30268",
       "recovered": "77780"
     },
@@ -200469,7 +200469,7 @@
     {
       "countrycode": "FR",
       "date": "8/04/20",
-      "cases": "228576",
+      "cases": "191295",
       "deaths": "30297",
       "recovered": "77780"
     },
@@ -201792,7 +201792,7 @@
     {
       "countrycode": "FR",
       "date": "8/05/20",
-      "cases": "228576",
+      "cases": "192334",
       "deaths": "30297",
       "recovered": "77780"
     },
@@ -203115,7 +203115,7 @@
     {
       "countrycode": "FR",
       "date": "8/06/20",
-      "cases": "231310",
+      "cases": "194029",
       "deaths": "30308",
       "recovered": "77780"
     },
@@ -204438,7 +204438,7 @@
     {
       "countrycode": "FR",
       "date": "8/07/20",
-      "cases": "235207",
+      "cases": "195633",
       "deaths": "30327",
       "recovered": "77780"
     },
@@ -205761,7 +205761,7 @@
     {
       "countrycode": "FR",
       "date": "8/08/20",
-      "cases": "235208",
+      "cases": "197921",
       "deaths": "30327",
       "recovered": "77780"
     },
@@ -207084,7 +207084,7 @@
     {
       "countrycode": "FR",
       "date": "8/09/20",
-      "cases": "235237",
+      "cases": "197921",
       "deaths": "30327",
       "recovered": "77780"
     },
@@ -208407,7 +208407,7 @@
     {
       "countrycode": "FR",
       "date": "8/10/20",
-      "cases": "239349",
+      "cases": "197921",
       "deaths": "30327",
       "recovered": "77780"
     },
@@ -209730,7 +209730,7 @@
     {
       "countrycode": "FR",
       "date": "8/11/20",
-      "cases": "239355",
+      "cases": "202775",
       "deaths": "30327",
       "recovered": "77780"
     },
@@ -211046,7 +211046,7 @@
     {
       "countrycode": "FR",
       "date": "8/12/20",
-      "cases": "244088",
+      "cases": "204172",
       "deaths": "30375",
       "recovered": "77780"
     },
@@ -212607,9 +212607,1332 @@
     {
       "countrycode": "FR",
       "date": "8/13/20",
-      "cases": "244096",
+      "cases": "206696",
       "deaths": "30376",
       "recovered": "77780"
+    },
+    {
+      "countrycode": "GB",
+      "date": "8/14/20",
+      "cases": "316367",
+      "deaths": "41358",
+      "recovered": "0"
+    },
+    {
+      "countrycode": "BR",
+      "date": "8/14/20",
+      "cases": "3224876",
+      "deaths": "105463",
+      "recovered": "1089686"
+    },
+    {
+      "countrycode": "US",
+      "date": "8/14/20",
+      "cases": "5304682",
+      "deaths": "168318",
+      "recovered": "924148"
+    },
+    {
+      "countrycode": "RU",
+      "date": "8/14/20",
+      "cases": "910778",
+      "deaths": "15467",
+      "recovered": "463103"
+    },
+    {
+      "countrycode": "IN",
+      "date": "8/14/20",
+      "cases": "2461190",
+      "deaths": "48040",
+      "recovered": "439934"
+    },
+    {
+      "countrycode": "CL",
+      "date": "8/14/20",
+      "cases": "382111",
+      "deaths": "10340",
+      "recovered": "268251"
+    },
+    {
+      "countrycode": "IR",
+      "date": "8/14/20",
+      "cases": "338825",
+      "deaths": "19331",
+      "recovered": "207000"
+    },
+    {
+      "countrycode": "MX",
+      "date": "8/14/20",
+      "cases": "505751",
+      "deaths": "55293",
+      "recovered": "204826"
+    },
+    {
+      "countrycode": "PE",
+      "date": "8/14/20",
+      "cases": "507996",
+      "deaths": "25648",
+      "recovered": "200938"
+    },
+    {
+      "countrycode": "IT",
+      "date": "8/14/20",
+      "cases": "252809",
+      "deaths": "35234",
+      "recovered": "192815"
+    },
+    {
+      "countrycode": "TR",
+      "date": "8/14/20",
+      "cases": "246861",
+      "deaths": "5934",
+      "recovered": "185292"
+    },
+    {
+      "countrycode": "DE",
+      "date": "8/14/20",
+      "cases": "223790",
+      "deaths": "9230",
+      "recovered": "182661"
+    },
+    {
+      "countrycode": "SA",
+      "date": "8/14/20",
+      "cases": "295902",
+      "deaths": "3338",
+      "recovered": "154839"
+    },
+    {
+      "countrycode": "ES",
+      "date": "8/14/20",
+      "cases": "342813",
+      "deaths": "28617",
+      "recovered": "150376"
+    },
+    {
+      "countrycode": "PK",
+      "date": "8/14/20",
+      "cases": "287300",
+      "deaths": "6153",
+      "recovered": "134957"
+    },
+    {
+      "countrycode": "ZA",
+      "date": "8/14/20",
+      "cases": "579140",
+      "deaths": "11556",
+      "recovered": "97848"
+    },
+    {
+      "countrycode": "QA",
+      "date": "8/14/20",
+      "cases": "114532",
+      "deaths": "190",
+      "recovered": "94903"
+    },
+    {
+      "countrycode": "CN",
+      "date": "8/14/20",
+      "cases": "89193",
+      "deaths": "4700",
+      "recovered": "79738"
+    },
+    {
+      "countrycode": "BD",
+      "date": "8/14/20",
+      "cases": "271881",
+      "deaths": "3591",
+      "recovered": "78102"
+    },
+    {
+      "countrycode": "FR",
+      "date": "8/14/20",
+      "cases": "212211",
+      "deaths": "30410",
+      "recovered": "77780"
+    },
+    {
+      "countrycode": "CA",
+      "date": "8/14/20",
+      "cases": "123521",
+      "deaths": "9068",
+      "recovered": "71370"
+    },
+    {
+      "countrycode": "BY",
+      "date": "8/14/20",
+      "cases": "69308",
+      "deaths": "603",
+      "recovered": "51902"
+    },
+    {
+      "countrycode": "CO",
+      "date": "8/14/20",
+      "cases": "433805",
+      "deaths": "14145",
+      "recovered": "50366"
+    },
+    {
+      "countrycode": "SE",
+      "date": "8/14/20",
+      "cases": "84294",
+      "deaths": "5783",
+      "recovered": "0"
+    },
+    {
+      "countrycode": "AE",
+      "date": "8/14/20",
+      "cases": "63819",
+      "deaths": "359",
+      "recovered": "41714"
+    },
+    {
+      "countrycode": "KW",
+      "date": "8/14/20",
+      "cases": "75185",
+      "deaths": "494",
+      "recovered": "41515"
+    },
+    {
+      "countrycode": "SG",
+      "date": "8/14/20",
+      "cases": "55580",
+      "deaths": "27",
+      "recovered": "41002"
+    },
+    {
+      "countrycode": "IQ",
+      "date": "8/14/20",
+      "cases": "168290",
+      "deaths": "5709",
+      "recovered": "36252"
+    },
+    {
+      "countrycode": "OM",
+      "date": "8/14/20",
+      "cases": "82743",
+      "deaths": "557",
+      "recovered": "31000"
+    },
+    {
+      "countrycode": "ID",
+      "date": "8/14/20",
+      "cases": "135123",
+      "deaths": "6021",
+      "recovered": "30785"
+    },
+    {
+      "countrycode": "AR",
+      "date": "8/14/20",
+      "cases": "282437",
+      "deaths": "5527",
+      "recovered": "30095"
+    },
+    {
+      "countrycode": "PT",
+      "date": "8/14/20",
+      "cases": "53783",
+      "deaths": "1772",
+      "recovered": "29445"
+    },
+    {
+      "countrycode": "CH",
+      "date": "8/14/20",
+      "cases": "37671",
+      "deaths": "1991",
+      "recovered": "29300"
+    },
+    {
+      "countrycode": "EC",
+      "date": "8/14/20",
+      "cases": "99409",
+      "deaths": "6030",
+      "recovered": "28872"
+    },
+    {
+      "countrycode": "BH",
+      "date": "8/14/20",
+      "cases": "46052",
+      "deaths": "168",
+      "recovered": "25178"
+    },
+    {
+      "countrycode": "PL",
+      "date": "8/14/20",
+      "cases": "55319",
+      "deaths": "1858",
+      "recovered": "24238"
+    },
+    {
+      "countrycode": "IE",
+      "date": "8/14/20",
+      "cases": "26995",
+      "deaths": "1774",
+      "recovered": "23364"
+    },
+    {
+      "countrycode": "UA",
+      "date": "8/14/20",
+      "cases": "89917",
+      "deaths": "2042",
+      "recovered": "22970"
+    },
+    {
+      "countrycode": "EG",
+      "date": "8/14/20",
+      "cases": "96220",
+      "deaths": "5124",
+      "recovered": "21718"
+    },
+    {
+      "countrycode": "RO",
+      "date": "8/14/20",
+      "cases": "68046",
+      "deaths": "2904",
+      "recovered": "20534"
+    },
+    {
+      "countrycode": "AF",
+      "date": "8/14/20",
+      "cases": "37431",
+      "deaths": "1363",
+      "recovered": "20179"
+    },
+    {
+      "countrycode": "DO",
+      "date": "8/14/20",
+      "cases": "84488",
+      "deaths": "1409",
+      "recovered": "19564"
+    },
+    {
+      "countrycode": "IL",
+      "date": "8/14/20",
+      "cases": "91080",
+      "deaths": "665",
+      "recovered": "18227"
+    },
+    {
+      "countrycode": "PA",
+      "date": "8/14/20",
+      "cases": "78446",
+      "deaths": "1722",
+      "recovered": "18036"
+    },
+    {
+      "countrycode": "BE",
+      "date": "8/14/20",
+      "cases": "76191",
+      "deaths": "9916",
+      "recovered": "17122"
+    },
+    {
+      "countrycode": "JP",
+      "date": "8/14/20",
+      "cases": "53818",
+      "deaths": "1080",
+      "recovered": "17057"
+    },
+    {
+      "countrycode": "AM",
+      "date": "8/14/20",
+      "cases": "41299",
+      "deaths": "814",
+      "recovered": "16907"
+    },
+    {
+      "countrycode": "AT",
+      "date": "8/14/20",
+      "cases": "22876",
+      "deaths": "725",
+      "recovered": "16686"
+    },
+    {
+      "countrycode": "KZ",
+      "date": "8/14/20",
+      "cases": "101848",
+      "deaths": "1269",
+      "recovered": "16298"
+    },
+    {
+      "countrycode": "GH",
+      "date": "8/14/20",
+      "cases": "41847",
+      "deaths": "223",
+      "recovered": "16070"
+    },
+    {
+      "countrycode": "RS",
+      "date": "8/14/20",
+      "cases": "29233",
+      "deaths": "665",
+      "recovered": "13447"
+    },
+    {
+      "countrycode": "AZ",
+      "date": "8/14/20",
+      "cases": "34018",
+      "deaths": "504",
+      "recovered": "12635"
+    },
+    {
+      "countrycode": "PH",
+      "date": "8/14/20",
+      "cases": "153660",
+      "deaths": "2442",
+      "recovered": "12386"
+    },
+    {
+      "countrycode": "DK",
+      "date": "8/14/20",
+      "cases": "15755",
+      "deaths": "621",
+      "recovered": "12184"
+    },
+    {
+      "countrycode": "DZ",
+      "date": "8/14/20",
+      "cases": "37664",
+      "deaths": "1351",
+      "recovered": "12094"
+    },
+    {
+      "countrycode": "BO",
+      "date": "8/14/20",
+      "cases": "96459",
+      "deaths": "3884",
+      "recovered": "11929"
+    },
+    {
+      "countrycode": "KR",
+      "date": "8/14/20",
+      "cases": "14873",
+      "deaths": "305",
+      "recovered": "11914"
+    },
+    {
+      "countrycode": "NG",
+      "date": "8/14/20",
+      "cases": "48445",
+      "deaths": "973",
+      "recovered": "11828"
+    },
+    {
+      "countrycode": "CM",
+      "date": "8/14/20",
+      "cases": "18469",
+      "deaths": "401",
+      "recovered": "11525"
+    },
+    {
+      "countrycode": "MD",
+      "date": "8/14/20",
+      "cases": "29483",
+      "deaths": "884",
+      "recovered": "11241"
+    },
+    {
+      "countrycode": "MA",
+      "date": "8/14/20",
+      "cases": "39241",
+      "deaths": "611",
+      "recovered": "10639"
+    },
+    {
+      "countrycode": "MY",
+      "date": "8/14/20",
+      "cases": "9149",
+      "deaths": "125",
+      "recovered": "8481"
+    },
+    {
+      "countrycode": "NO",
+      "date": "8/14/20",
+      "cases": "9908",
+      "deaths": "261",
+      "recovered": "8138"
+    },
+    {
+      "countrycode": "CZ",
+      "date": "8/14/20",
+      "cases": "19693",
+      "deaths": "394",
+      "recovered": "7910"
+    },
+    {
+      "countrycode": "NP",
+      "date": "8/14/20",
+      "cases": "25551",
+      "deaths": "99",
+      "recovered": "7499"
+    },
+    {
+      "countrycode": "AU",
+      "date": "8/14/20",
+      "cases": "23046",
+      "deaths": "379",
+      "recovered": "7455"
+    },
+    {
+      "countrycode": "FI",
+      "date": "8/14/20",
+      "cases": "7700",
+      "deaths": "333",
+      "recovered": "6700"
+    },
+    {
+      "countrycode": "UZ",
+      "date": "8/14/20",
+      "cases": "33821",
+      "deaths": "220",
+      "recovered": "6690"
+    },
+    {
+      "countrycode": "CI",
+      "date": "8/14/20",
+      "cases": "16935",
+      "deaths": "108",
+      "recovered": "5487"
+    },
+    {
+      "countrycode": "SD",
+      "date": "8/14/20",
+      "cases": "12162",
+      "deaths": "793",
+      "recovered": "5034"
+    },
+    {
+      "countrycode": "SN",
+      "date": "8/14/20",
+      "cases": "11872",
+      "deaths": "249",
+      "recovered": "5023"
+    },
+    {
+      "countrycode": "TJ",
+      "date": "8/14/20",
+      "cases": "7989",
+      "deaths": "63",
+      "recovered": "4965"
+    },
+    {
+      "countrycode": "SV",
+      "date": "8/14/20",
+      "cases": "22314",
+      "deaths": "595",
+      "recovered": "4929"
+    },
+    {
+      "countrycode": "DJ",
+      "date": "8/14/20",
+      "cases": "5367",
+      "deaths": "59",
+      "recovered": "4621"
+    },
+    {
+      "countrycode": "GN",
+      "date": "8/14/20",
+      "cases": "8260",
+      "deaths": "50",
+      "recovered": "4542"
+    },
+    {
+      "countrycode": "LU",
+      "date": "8/14/20",
+      "cases": "7405",
+      "deaths": "122",
+      "recovered": "4056"
+    },
+    {
+      "countrycode": "GT",
+      "date": "8/14/20",
+      "cases": "61428",
+      "deaths": "2341",
+      "recovered": "3429"
+    },
+    {
+      "countrycode": "MK",
+      "date": "8/14/20",
+      "cases": "12515",
+      "deaths": "535",
+      "recovered": "3324"
+    },
+    {
+      "countrycode": "CD",
+      "date": "8/14/20",
+      "cases": "9605",
+      "deaths": "238",
+      "recovered": "3226"
+    },
+    {
+      "countrycode": "TH",
+      "date": "8/14/20",
+      "cases": "3376",
+      "deaths": "58",
+      "recovered": "3072"
+    },
+    {
+      "countrycode": "BG",
+      "date": "8/14/20",
+      "cases": "14243",
+      "deaths": "492",
+      "recovered": "3000"
+    },
+    {
+      "countrycode": "KG",
+      "date": "8/14/20",
+      "cases": "41373",
+      "deaths": "1491",
+      "recovered": "2916"
+    },
+    {
+      "countrycode": "HU",
+      "date": "8/14/20",
+      "cases": "4853",
+      "deaths": "607",
+      "recovered": "2874"
+    },
+    {
+      "countrycode": "BA",
+      "date": "8/14/20",
+      "cases": "15535",
+      "deaths": "469",
+      "recovered": "2693"
+    },
+    {
+      "countrycode": "HN",
+      "date": "8/14/20",
+      "cases": "49042",
+      "deaths": "1542",
+      "recovered": "2585"
+    },
+    {
+      "countrycode": "GA",
+      "date": "8/14/20",
+      "cases": "8225",
+      "deaths": "51",
+      "recovered": "2574"
+    },
+    {
+      "countrycode": "KE",
+      "date": "8/14/20",
+      "cases": "29334",
+      "deaths": "465",
+      "recovered": "2504"
+    },
+    {
+      "countrycode": "ET",
+      "date": "8/14/20",
+      "cases": "27242",
+      "deaths": "492",
+      "recovered": "2430"
+    },
+    {
+      "countrycode": "CU",
+      "date": "8/14/20",
+      "cases": "3229",
+      "deaths": "89",
+      "recovered": "2240"
+    },
+    {
+      "countrycode": "HR",
+      "date": "8/14/20",
+      "cases": "6258",
+      "deaths": "163",
+      "recovered": "2229"
+    },
+    {
+      "countrycode": "MV",
+      "date": "8/14/20",
+      "cases": "5572",
+      "deaths": "22",
+      "recovered": "2158"
+    },
+    {
+      "countrycode": "VE",
+      "date": "8/14/20",
+      "cases": "31381",
+      "deaths": "266",
+      "recovered": "2100"
+    },
+    {
+      "countrycode": "NI",
+      "date": "8/14/20",
+      "cases": "4115",
+      "deaths": "128",
+      "recovered": "1993"
+    },
+    {
+      "countrycode": "LK",
+      "date": "8/14/20",
+      "cases": "2886",
+      "deaths": "11",
+      "recovered": "1955"
+    },
+    {
+      "countrycode": "XK",
+      "date": "8/14/20",
+      "cases": "11130",
+      "deaths": "381",
+      "recovered": "1946"
+    },
+    {
+      "countrycode": "MR",
+      "date": "8/14/20",
+      "cases": "6676",
+      "deaths": "157",
+      "recovered": "1944"
+    },
+    {
+      "countrycode": "EE",
+      "date": "8/14/20",
+      "cases": "2177",
+      "deaths": "63",
+      "recovered": "1880"
+    },
+    {
+      "countrycode": "IS",
+      "date": "8/14/20",
+      "cases": "1983",
+      "deaths": "10",
+      "recovered": "1847"
+    },
+    {
+      "countrycode": "HT",
+      "date": "8/14/20",
+      "cases": "7810",
+      "deaths": "192",
+      "recovered": "1824"
+    },
+    {
+      "countrycode": "CR",
+      "date": "8/14/20",
+      "cases": "26931",
+      "deaths": "281",
+      "recovered": "1810"
+    },
+    {
+      "countrycode": "AL",
+      "date": "8/14/20",
+      "cases": "7117",
+      "deaths": "219",
+      "recovered": "1744"
+    },
+    {
+      "countrycode": "ML",
+      "date": "8/14/20",
+      "cases": "2597",
+      "deaths": "125",
+      "recovered": "1556"
+    },
+    {
+      "countrycode": "LT",
+      "date": "8/14/20",
+      "cases": "2352",
+      "deaths": "81",
+      "recovered": "1547"
+    },
+    {
+      "countrycode": "NZ",
+      "date": "8/14/20",
+      "cases": "1602",
+      "deaths": "22",
+      "recovered": "1492"
+    },
+    {
+      "countrycode": "SK",
+      "date": "8/14/20",
+      "cases": "2801",
+      "deaths": "31",
+      "recovered": "1473"
+    },
+    {
+      "countrycode": "SI",
+      "date": "8/14/20",
+      "cases": "2369",
+      "deaths": "129",
+      "recovered": "1423"
+    },
+    {
+      "countrycode": "GR",
+      "date": "8/14/20",
+      "cases": "6632",
+      "deaths": "223",
+      "recovered": "1374"
+    },
+    {
+      "countrycode": "LB",
+      "date": "8/14/20",
+      "cases": "8045",
+      "deaths": "94",
+      "recovered": "1348"
+    },
+    {
+      "countrycode": "ZM",
+      "date": "8/14/20",
+      "cases": "9021",
+      "deaths": "256",
+      "recovered": "1348"
+    },
+    {
+      "countrycode": "PY",
+      "date": "8/14/20",
+      "cases": "8389",
+      "deaths": "97",
+      "recovered": "1193"
+    },
+    {
+      "countrycode": "MG",
+      "date": "8/14/20",
+      "cases": "13643",
+      "deaths": "164",
+      "recovered": "1187"
+    },
+    {
+      "countrycode": "SO",
+      "date": "8/14/20",
+      "cases": "3250",
+      "deaths": "93",
+      "recovered": "1096"
+    },
+    {
+      "countrycode": "SL",
+      "date": "8/14/20",
+      "cases": "1947",
+      "deaths": "69",
+      "recovered": "1086"
+    },
+    {
+      "countrycode": "TN",
+      "date": "8/14/20",
+      "cases": "1903",
+      "deaths": "53",
+      "recovered": "1049"
+    },
+    {
+      "countrycode": "LV",
+      "date": "8/14/20",
+      "cases": "1308",
+      "deaths": "32",
+      "recovered": "1008"
+    },
+    {
+      "countrycode": "CF",
+      "date": "8/14/20",
+      "cases": "4652",
+      "deaths": "61",
+      "recovered": "976"
+    },
+    {
+      "countrycode": "NE",
+      "date": "8/14/20",
+      "cases": "1161",
+      "deaths": "69",
+      "recovered": "974"
+    },
+    {
+      "countrycode": "JO",
+      "date": "8/14/20",
+      "cases": "1329",
+      "deaths": "11",
+      "recovered": "969"
+    },
+    {
+      "countrycode": "UG",
+      "date": "8/14/20",
+      "cases": "1385",
+      "deaths": "12",
+      "recovered": "896"
+    },
+    {
+      "countrycode": "BF",
+      "date": "8/14/20",
+      "cases": "1238",
+      "deaths": "54",
+      "recovered": "860"
+    },
+    {
+      "countrycode": "UY",
+      "date": "8/14/20",
+      "cases": "1421",
+      "deaths": "38",
+      "recovered": "858"
+    },
+    {
+      "countrycode": "GQ",
+      "date": "8/14/20",
+      "cases": "4821",
+      "deaths": "83",
+      "recovered": "842"
+    },
+    {
+      "countrycode": "CY",
+      "date": "8/14/20",
+      "cases": "1318",
+      "deaths": "20",
+      "recovered": "839"
+    },
+    {
+      "countrycode": "GE",
+      "date": "8/14/20",
+      "cases": "1306",
+      "deaths": "17",
+      "recovered": "838"
+    },
+    {
+      "countrycode": "AD",
+      "date": "8/14/20",
+      "cases": "989",
+      "deaths": "53",
+      "recovered": "800"
+    },
+    {
+      "countrycode": "TD",
+      "date": "8/14/20",
+      "cases": "951",
+      "deaths": "76",
+      "recovered": "788"
+    },
+    {
+      "countrycode": "GW",
+      "date": "8/14/20",
+      "cases": "2088",
+      "deaths": "29",
+      "recovered": "760"
+    },
+    {
+      "countrycode": "CV",
+      "date": "8/14/20",
+      "cases": "3136",
+      "deaths": "33",
+      "recovered": "724"
+    },
+    {
+      "countrycode": "SM",
+      "date": "8/14/20",
+      "cases": "699",
+      "deaths": "42",
+      "recovered": "656"
+    },
+    {
+      "countrycode": "MT",
+      "date": "8/14/20",
+      "cases": "1276",
+      "deaths": "9",
+      "recovered": "653"
+    },
+    {
+      "countrycode": "DP",
+      "date": "8/14/20",
+      "cases": "712",
+      "deaths": "13",
+      "recovered": "651"
+    },
+    {
+      "countrycode": "RW",
+      "date": "8/14/20",
+      "cases": "2293",
+      "deaths": "8",
+      "recovered": "595"
+    },
+    {
+      "countrycode": "JM",
+      "date": "8/14/20",
+      "cases": "1071",
+      "deaths": "14",
+      "recovered": "591"
+    },
+    {
+      "countrycode": "YE",
+      "date": "8/14/20",
+      "cases": "1858",
+      "deaths": "528",
+      "recovered": "591"
+    },
+    {
+      "countrycode": "SZ",
+      "date": "8/14/20",
+      "cases": "3670",
+      "deaths": "68",
+      "recovered": "570"
+    },
+    {
+      "countrycode": "CG",
+      "date": "8/14/20",
+      "cases": "3745",
+      "deaths": "60",
+      "recovered": "501"
+    },
+    {
+      "countrycode": "PS",
+      "date": "8/14/20",
+      "cases": "15834",
+      "deaths": "106",
+      "recovered": "494"
+    },
+    {
+      "countrycode": "TG",
+      "date": "8/14/20",
+      "cases": "1124",
+      "deaths": "26",
+      "recovered": "467"
+    },
+    {
+      "countrycode": "TW",
+      "date": "8/14/20",
+      "cases": "481",
+      "deaths": "7",
+      "recovered": "438"
+    },
+    {
+      "countrycode": "LR",
+      "date": "8/14/20",
+      "cases": "1252",
+      "deaths": "82",
+      "recovered": "394"
+    },
+    {
+      "countrycode": "VN",
+      "date": "8/14/20",
+      "cases": "930",
+      "deaths": "22",
+      "recovered": "341"
+    },
+    {
+      "countrycode": "BJ",
+      "date": "8/14/20",
+      "cases": "2014",
+      "deaths": "38",
+      "recovered": "333"
+    },
+    {
+      "countrycode": "SS",
+      "date": "8/14/20",
+      "cases": "2482",
+      "deaths": "47",
+      "recovered": "333"
+    },
+    {
+      "countrycode": "MU",
+      "date": "8/14/20",
+      "cases": "345",
+      "deaths": "10",
+      "recovered": "330"
+    },
+    {
+      "countrycode": "ME",
+      "date": "8/14/20",
+      "cases": "3930",
+      "deaths": "73",
+      "recovered": "320"
+    },
+    {
+      "countrycode": "MW",
+      "date": "8/14/20",
+      "cases": "4988",
+      "deaths": "156",
+      "recovered": "317"
+    },
+    {
+      "countrycode": "SR",
+      "date": "8/14/20",
+      "cases": "2761",
+      "deaths": "40",
+      "recovered": "315"
+    },
+    {
+      "countrycode": "MZ",
+      "date": "8/14/20",
+      "cases": "2708",
+      "deaths": "19",
+      "recovered": "280"
+    },
+    {
+      "countrycode": "ST",
+      "date": "8/14/20",
+      "cases": "885",
+      "deaths": "15",
+      "recovered": "279"
+    },
+    {
+      "countrycode": "LY",
+      "date": "8/14/20",
+      "cases": "7050",
+      "deaths": "135",
+      "recovered": "269"
+    },
+    {
+      "countrycode": "KM",
+      "date": "8/14/20",
+      "cases": "403",
+      "deaths": "7",
+      "recovered": "266"
+    },
+    {
+      "countrycode": "MM",
+      "date": "8/14/20",
+      "cases": "369",
+      "deaths": "6",
+      "recovered": "245"
+    },
+    {
+      "countrycode": "ZW",
+      "date": "8/14/20",
+      "cases": "5072",
+      "deaths": "128",
+      "recovered": "197"
+    },
+    {
+      "countrycode": "MN",
+      "date": "8/14/20",
+      "cases": "297",
+      "deaths": "0",
+      "recovered": "194"
+    },
+    {
+      "countrycode": "NL",
+      "date": "8/14/20",
+      "cases": "63121",
+      "deaths": "6189",
+      "recovered": "187"
+    },
+    {
+      "countrycode": "TZ",
+      "date": "8/14/20",
+      "cases": "509",
+      "deaths": "21",
+      "recovered": "183"
+    },
+    {
+      "countrycode": "BN",
+      "date": "8/14/20",
+      "cases": "142",
+      "deaths": "3",
+      "recovered": "138"
+    },
+    {
+      "countrycode": "KH",
+      "date": "8/14/20",
+      "cases": "273",
+      "deaths": "0",
+      "recovered": "131"
+    },
+    {
+      "countrycode": "SY",
+      "date": "8/14/20",
+      "cases": "1515",
+      "deaths": "58",
+      "recovered": "126"
+    },
+    {
+      "countrycode": "GY",
+      "date": "8/14/20",
+      "cases": "649",
+      "deaths": "22",
+      "recovered": "121"
+    },
+    {
+      "countrycode": "BI",
+      "date": "8/14/20",
+      "cases": "412",
+      "deaths": "1",
+      "recovered": "118"
+    },
+    {
+      "countrycode": "AO",
+      "date": "8/14/20",
+      "cases": "1852",
+      "deaths": "86",
+      "recovered": "117"
+    },
+    {
+      "countrycode": "TT",
+      "date": "8/14/20",
+      "cases": "426",
+      "deaths": "10",
+      "recovered": "117"
+    },
+    {
+      "countrycode": "MC",
+      "date": "8/14/20",
+      "cases": "146",
+      "deaths": "4",
+      "recovered": "95"
+    },
+    {
+      "countrycode": "BB",
+      "date": "8/14/20",
+      "cases": "144",
+      "deaths": "7",
+      "recovered": "90"
+    },
+    {
+      "countrycode": "BS",
+      "date": "8/14/20",
+      "cases": "1089",
+      "deaths": "15",
+      "recovered": "89"
+    },
+    {
+      "countrycode": "LI",
+      "date": "8/14/20",
+      "cases": "91",
+      "deaths": "1",
+      "recovered": "81"
+    },
+    {
+      "countrycode": "ER",
+      "date": "8/14/20",
+      "cases": "285",
+      "deaths": "0",
+      "recovered": "56"
+    },
+    {
+      "countrycode": "BT",
+      "date": "8/14/20",
+      "cases": "128",
+      "deaths": "0",
+      "recovered": "54"
+    },
+    {
+      "countrycode": "BW",
+      "date": "8/14/20",
+      "cases": "1214",
+      "deaths": "3",
+      "recovered": "31"
+    },
+    {
+      "countrycode": "VC",
+      "date": "8/14/20",
+      "cases": "57",
+      "deaths": "0",
+      "recovered": "29"
+    },
+    {
+      "countrycode": "GM",
+      "date": "8/14/20",
+      "cases": "1623",
+      "deaths": "50",
+      "recovered": "27"
+    },
+    {
+      "countrycode": "NA",
+      "date": "8/14/20",
+      "cases": "3726",
+      "deaths": "31",
+      "recovered": "25"
+    },
+    {
+      "countrycode": "TL",
+      "date": "8/14/20",
+      "cases": "25",
+      "deaths": "0",
+      "recovered": "24"
+    },
+    {
+      "countrycode": "AG",
+      "date": "8/14/20",
+      "cases": "93",
+      "deaths": "3",
+      "recovered": "23"
+    },
+    {
+      "countrycode": "GD",
+      "date": "8/14/20",
+      "cases": "24",
+      "deaths": "0",
+      "recovered": "23"
+    },
+    {
+      "countrycode": "BZ",
+      "date": "8/14/20",
+      "cases": "356",
+      "deaths": "2",
+      "recovered": "19"
+    },
+    {
+      "countrycode": "LA",
+      "date": "8/14/20",
+      "cases": "22",
+      "deaths": "0",
+      "recovered": "19"
+    },
+    {
+      "countrycode": "LC",
+      "date": "8/14/20",
+      "cases": "25",
+      "deaths": "0",
+      "recovered": "19"
+    },
+    {
+      "countrycode": "DM",
+      "date": "8/14/20",
+      "cases": "18",
+      "deaths": "0",
+      "recovered": "18"
+    },
+    {
+      "countrycode": "FJ",
+      "date": "8/14/20",
+      "cases": "28",
+      "deaths": "1",
+      "recovered": "18"
+    },
+    {
+      "countrycode": "KN",
+      "date": "8/14/20",
+      "cases": "17",
+      "deaths": "0",
+      "recovered": "15"
+    },
+    {
+      "countrycode": "VA",
+      "date": "8/14/20",
+      "cases": "12",
+      "deaths": "0",
+      "recovered": "12"
+    },
+    {
+      "countrycode": "LS",
+      "date": "8/14/20",
+      "cases": "884",
+      "deaths": "25",
+      "recovered": "11"
+    },
+    {
+      "countrycode": "SC",
+      "date": "8/14/20",
+      "cases": "127",
+      "deaths": "0",
+      "recovered": "11"
+    },
+    {
+      "countrycode": "PG",
+      "date": "8/14/20",
+      "cases": "271",
+      "deaths": "3",
+      "recovered": "8"
+    },
+    {
+      "countrycode": "EH",
+      "date": "8/14/20",
+      "cases": "10",
+      "deaths": "1",
+      "recovered": "8"
+    },
+    {
+      "countrycode": "NANA",
+      "date": "8/14/20",
+      "cases": "9",
+      "deaths": "2",
+      "recovered": "0"
+    },
+    {
+      "countrycode": "GL",
+      "date": "8/14/20",
+      "cases": "13",
+      "deaths": "0",
+      "recovered": "0"
     },
     {
       "countrycode": "GA",
