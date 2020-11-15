@@ -1,6 +1,6 @@
 import { countries } from './countries'
 
-const toGeo = incident => {
+const toGeo = (incident, estimate = false) => {
     const country = countries.get(incident.countrycode);
     if(!country){
         //console.error(`Could not find country ${incident.countrycode} ${incident.countrylabel}`);
@@ -8,7 +8,7 @@ const toGeo = incident => {
     }
 
     const total = parseInt(incident.cases) || 0;
-    const recovered = parseInt(incident.recovered) || 0;
+    const recovered = estimate ? parseInt(incident.recovered) || 0 : parseInt(incident.estimateRecovered) || 0;
     const deaths = parseInt(incident.deaths) || 0;
 
     return {

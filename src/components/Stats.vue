@@ -27,12 +27,22 @@ export default {
         const state = useState();
         const totalcases = computed(() => sumBy(state.day.value.data, 'cases'));
         const totaldeaths = computed(() => sumBy(state.day.value.data, 'deaths'));
-        const totalrecovered = computed(() => sumBy(state.day.value.data, 'recovered'));
+        const totalrecovered = computed(() => {
+            if(state.simulateRecovered.value){
+                return sumBy(state.day.value.data, 'estimateRecovered')
+            }
+            return sumBy(state.day.value.data, 'recovered')
+        });
         const infectedNow = computed(() => totalcases.value - totalrecovered.value - totaldeaths.value);
 
-        const prevtotalcases = computed(() => state.prevDay.value ? sumBy(state.prevDay.value.data, 'cases') : 0);
-        const prevtotaldeaths = computed(() => state.prevDay.value ? sumBy(state.prevDay.value.data, 'deaths') : 0);
-        const prevtotalrecovered = computed(() => state.prevDay.value ? sumBy(state.prevDay.value.data, 'recovered') : 0);
+        const prevtotalcases = computed(() => sumBy(state.prevDay.value, 'cases'));
+        const prevtotaldeaths = computed(() => sumBy(state.prevDay.value, 'deaths'));
+        const prevtotalrecovered = computed(() => {
+            if(state.simulateRecovered.value){
+                return sumBy(state.prevDay.value, 'estimateRecovered')
+            }
+            sumBy(state.prevDay.value, 'recovered')
+        });
         const previnfectedNow = computed(() => prevtotalcases.value - prevtotalrecovered.value - prevtotaldeaths.value);
 
         const trendTotal = computed(() => getArrowText(prevtotalcases.value, totalcases.value));
@@ -73,18 +83,18 @@ export default {
     justify-content: center;
     align-items: center;
     font-size: 0.8em;
-    min-height: 0.8em;
+    min-height: 24px;
 }
 
 .trend:empty:before {
   content: "\200b"; /* unicode zero width space character */
 }
 
-.trend >>> .color-red{
+.trend ::v-deep(.color-red){
   color: #d21921;
 }
 
-.trend >>> .color-green{
+.trend ::v-deep(.color-green){
   color: #159c33;
 }
 

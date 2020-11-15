@@ -1,5 +1,5 @@
 <template>
-    <div class="btn" :class="state">
+    <div class="btn" :class="{pause: playing, play: !playing}">
         <span class="bar bar-1"></span>
         <span class="bar bar-2"></span>
     </div>
@@ -8,10 +8,7 @@
 <script>
 import { computed } from 'vue'
 export default {
-    setup(props){
-        const state = computed(() => props.playing ? 'pause' : 'play')
-        return { state }
-    }
+    props: ['playing'],
 }
 </script>
 

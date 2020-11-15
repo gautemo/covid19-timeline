@@ -12,6 +12,7 @@ const getCovid19 = async () => {
 }
 
 const convertData = data => {
+    // add estimated recovered here instead
     const covid = [];
     for (const stats of data) {
         const day = covid.find(c => c.date === stats.date);
@@ -24,7 +25,17 @@ const convertData = data => {
             });
         }
     }
-    return covid.sort((a, b) => new Date(a.date) - new Date(b.date));
+    const sorted = covid.sort((a, b) => new Date(a.date) - new Date(b.date));
+    for(let i = 21; i < sorted.length; i++){
+        for(let incident of sorted[i].data){
+            const incident21daysAgo = sorted[i-21].data.find(i => i.countrycode === incident.countrycode);
+            if (!incident21daysAgo) continue;
+            const cases = parseInt(incident21daysAgo.cases) || 0
+            const deaths = parseInt(incident21daysAgo.deaths) || 0
+            incident.estimateRecovered = cases - deaths
+        }
+    }
+    return sorted
 }
 
 export { getCovid19 }

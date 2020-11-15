@@ -38,6 +38,7 @@ export default {
 
       info.value = new google.maps.InfoWindow({})
       map.value.data.addListener('click', (mapEvent) => openInfoWindow(mapEvent))
+      paintCircles(state.day)
     };
 
     const script = document.createElement('script');
@@ -63,11 +64,16 @@ export default {
         return;
       }
       const total = parseInt(incident.cases) || 0;
-      const recovered = parseInt(incident.recovered) || 0;
+      let recovered
+      if(state.simulateRecovered.value){
+        recovered = incident.estimateRecovered || 0;
+      }else{
+        recovered = parseInt(incident.recovered) || 0;
+      }
       const deaths = parseInt(incident.deaths) || 0;
       const current = total - recovered - deaths;
 
-      let prevIncident = state.prevDay.value.data.find(i => i.countrycode === countrycode);
+      let prevIncident = state.prevDay.value.find(i => i.countrycode === countrycode);
       if(!prevIncident){
         prevIncident = {
           cases: 0,
@@ -76,7 +82,12 @@ export default {
         }
       }
       const prevTotal = parseInt(prevIncident.cases) || 0;
-      const prevRecovered = parseInt(prevIncident.recovered) || 0;
+      let prevRecovered
+      if(state.simulateRecovered.value){
+        prevRecovered = prevIncident.estimateRecovered || 0;
+      }else{
+        prevRecovered = parseInt(prevIncident.recovered) || 0;
+      }
       const prevDeaths = parseInt(prevIncident.deaths) || 0;
       const prevCurrent = prevTotal - prevRecovered - prevDeaths;      
 
@@ -90,24 +101,22 @@ export default {
       `);
     }
 
-    watch(state.day, (newVal, oldVal) => {
-      if(newVal && oldVal){
-        const oldDate = new Date(oldVal.date);
-        const newDate = new Date(newVal.date);
-        if(newDate.getTime() < oldDate.getTime()){
-          circles.value.forEach(c => c.setGeometry(null));
-        }
-      }
+    const paintCircles = () => {
+      circles.value.forEach(c => c.setGeometry(null));
       if(Object.keys(map.value).length > 0){
         const featureCollection = {
           type: "FeatureCollection",
-          features: state.day.value.data.map(toGeo).filter(g => g),
+          features: state.day.value.data.map(i => toGeo(i, state.simulateRecovered.value)).filter(g => g),
         }
         circles.value = map.value.data.addGeoJson(featureCollection)
       }
       if(info.value.countrycode){
         updateInfoWindow(info.value.countrycode)
       }
+    }
+
+    watch([state.day, state.simulateRecovered], () => {
+      paintCircles()
     })
 
     return { };
@@ -375,22 +384,22 @@ const darkMapStyle = [
   flex: 1;
 }
 
-#map >>> .info-box{
+#map ::v-deep(.info-box){
   margin: 5px 0;
   display: flex;
   align-items: center;
 }
 
-#map >>> .info-box .red{
+#map ::v-deep(.info-box .red){
   border-bottom: 2px solid #d21921;
   border-radius: 1px;
 }
 
-#map >>> .info-box .color-red{
+#map ::v-deep(.info-box .color-red){
   color: #d21921;
 }
 
-#map >>> .info-box .color-green{
+#map ::v-deep(.info-box .color-green){
   color: #159c33;
 }
 </style>
