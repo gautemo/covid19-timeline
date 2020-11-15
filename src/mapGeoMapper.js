@@ -8,7 +8,7 @@ const toGeo = (incident, estimate = false) => {
     }
 
     const total = parseInt(incident.cases) || 0;
-    const recovered = estimate ? parseInt(incident.recovered) || 0 : parseInt(incident.estimateRecovered) || 0;
+    const recovered = !estimate ? parseInt(incident.recovered) || 0 : parseInt(incident.estimateRecovered) || 0;
     const deaths = parseInt(incident.deaths) || 0;
 
     return {

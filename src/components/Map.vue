@@ -94,10 +94,10 @@ export default {
       const { name } = countries.get(countrycode);
       info.value.setContent(`
         <h2 class="info-box">${name}</h2>
-        <p class="info-box">Current Infected: <span class="red">${current}</span> ${getArrowText(prevCurrent, current, true)}</p>
-        <p class="info-box">Cases: ${total} ${getArrowText(prevTotal, total, true)}</p>
-        <p class="info-box">Recovered: ${recovered} ${getArrowText(prevRecovered, recovered, true, true)}</p>
-        <p class="info-box">Deaths: ${deaths} ${getArrowText(prevDeaths, deaths, true)}</p>
+        <p class="info-box">Current Infected: <span class="red">${format(current)}</span> ${getArrowText(prevCurrent, current, true)}</p>
+        <p class="info-box">Cases: ${format(total)} ${getArrowText(prevTotal, total, true)}</p>
+        <p class="info-box">Recovered: ${format(recovered)} ${getArrowText(prevRecovered, recovered, true, true)}</p>
+        <p class="info-box">Deaths: ${format(deaths)} ${getArrowText(prevDeaths, deaths, true)}</p>
       `);
     }
 
@@ -122,6 +122,8 @@ export default {
     return { };
   }
 };
+
+const format = num => new Intl.NumberFormat().format(num)
 
 const getOpacity = mag => {
   const o = 0.16 * mag ** 0.12;
