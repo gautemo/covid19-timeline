@@ -126,11 +126,11 @@ export default {
 const format = num => new Intl.NumberFormat().format(num)
 
 const getOpacity = mag => {
-  const o = 0.16 * mag ** 0.12;
+  const o = 0.01 * mag ** 0.32;
   return Math.max(Math.min(o, 1), 0.2);
 }
 
-const getScale = mag => 4.6 * mag ** 0.2
+const getScale = mag => Math.max(1.1 * mag ** 0.3, 2)
 
 const darkMapStyle = [
   {
