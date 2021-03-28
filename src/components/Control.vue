@@ -1,7 +1,7 @@
 <template>
   <div class="control">
     <PlayButton @click="control.playing = !control.playing" :playing="control.playing"/>
-    <input class="speed" type="range" min="500" max="5000" v-model.number="control.speed" :style="{ '--percentage': `${(control.speed - 500) / 4500 * 100}%` }" />
+    <input class="speed" type="range" min="1000" max="5000" v-model.number="control.speed" :style="{ '--percentage': `${(control.speed - 1000) / 4000 * 100}%` }" />
     <span class="speed-display">
         <span>{{speedDisplay}}</span>
         <Speed/>

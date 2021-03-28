@@ -1,9 +1,9 @@
-import { countries } from './countries'
+import { getCountry } from './countries'
 
 const toGeo = (incident, estimate = false) => {
-    const country = countries.get(incident.countrycode);
+    const country = getCountry(incident.country);
     if(!country){
-        //console.error(`Could not find country ${incident.countrycode} ${incident.countrylabel}`);
+        console.error(`Could not find country ${incident.country}`);
         return null;
     }
 
@@ -11,11 +11,14 @@ const toGeo = (incident, estimate = false) => {
     const recovered = !estimate ? parseInt(incident.recovered) || 0 : parseInt(incident.estimateRecovered) || 0;
     const deaths = parseInt(incident.deaths) || 0;
 
+    const currentInfected = total - recovered - deaths;
+    if(currentInfected === 0) return null;
+
     return {
         type: "Feature",
         properties: {
-            mag: total - recovered - deaths,
-            place: incident.countrylabel,
+            mag: currentInfected,
+            place: incident.country,
         },
         geometry: {
             type: "Point",
@@ -24,7 +27,7 @@ const toGeo = (incident, estimate = false) => {
                 country.latitude,
             ]
         },
-        id: incident.countrycode,
+        id: incident.country,
     }
 }
 

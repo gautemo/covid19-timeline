@@ -41,7 +41,7 @@ export default {
             if(state.simulateRecovered.value){
                 return sumBy(state.prevDay.value, 'estimateRecovered')
             }
-            sumBy(state.prevDay.value, 'recovered')
+            return sumBy(state.prevDay.value, 'recovered')
         });
         const previnfectedNow = computed(() => prevtotalcases.value - prevtotalrecovered.value - prevtotaldeaths.value);
 

@@ -13,7 +13,7 @@
 export default {
   props: ['size'],
   setup({size}){
-    return size
+    return { size }
   }
 };
 </script>

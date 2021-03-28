@@ -15,7 +15,7 @@ I wanted to have a visualisation of the spread which also shows the decline in n
 * Netlify
 
 ## Data Source
-[thevirustracker.com/](https://thevirustracker.com/)
+[corona.lmao.ninja/docs](https://corona.lmao.ninja/docs)
 
 ## Project setup
 ```

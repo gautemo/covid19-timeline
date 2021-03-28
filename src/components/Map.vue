@@ -6,7 +6,7 @@
 import { onMounted, watch, ref } from "vue";
 import { useState } from '@/state.js';
 import { toGeo } from '@/mapGeoMapper'
-import { countries } from '@/countries'
+import { getCountry } from '@/countries'
 import { getArrowText } from '@/arrows.js';
 
 export default {
@@ -50,15 +50,15 @@ export default {
 
     const state = useState();
 
-    const openInfoWindow = mapEvent => {      
+    const openInfoWindow = mapEvent => {   
       info.value.setPosition(mapEvent.latLng);
-      info.value.countrycode = mapEvent.feature.o;
-      updateInfoWindow(mapEvent.feature.o)
+      info.value.country = mapEvent.feature.j;
+      updateInfoWindow(mapEvent.feature.j)
       info.value.open(map.value)
     }
 
-    const updateInfoWindow = countrycode => {
-      const incident = state.day.value.data.find(i => i.countrycode === countrycode);
+    const updateInfoWindow = country => {
+      const incident = state.day.value.data.find(i => i.country === country);
       if(!incident){
         info.value.close();
         return;
@@ -73,7 +73,7 @@ export default {
       const deaths = parseInt(incident.deaths) || 0;
       const current = total - recovered - deaths;
 
-      let prevIncident = state.prevDay.value.find(i => i.countrycode === countrycode);
+      let prevIncident = state.prevDay.value.find(i => i.country === country);
       if(!prevIncident){
         prevIncident = {
           cases: 0,
@@ -91,7 +91,7 @@ export default {
       const prevDeaths = parseInt(prevIncident.deaths) || 0;
       const prevCurrent = prevTotal - prevRecovered - prevDeaths;      
 
-      const { name } = countries.get(countrycode);
+      const { name } = getCountry(country);
       info.value.setContent(`
         <h2 class="info-box">${name}</h2>
         <p class="info-box">Current Infected: <span class="red">${format(current)}</span> ${getArrowText(prevCurrent, current, true)}</p>
@@ -110,8 +110,8 @@ export default {
         }
         circles.value = map.value.data.addGeoJson(featureCollection)
       }
-      if(info.value.countrycode){
-        updateInfoWindow(info.value.countrycode)
+      if(info.value.country){
+        updateInfoWindow(info.value.country)
       }
     }
 
@@ -130,7 +130,7 @@ const getOpacity = mag => {
   return Math.max(Math.min(o, 1), 0.2);
 }
 
-const getScale = mag => Math.max(1.1 * mag ** 0.3, 2)
+const getScale = mag => Math.max(1.1 * mag ** 0.27, 2)
 
 const darkMapStyle = [
   {
