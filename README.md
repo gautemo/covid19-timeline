@@ -15,7 +15,7 @@ I wanted to have a visualisation of the spread which also shows the decline in n
 * Netlify
 
 ## Data Source
-[corona.lmao.ninja/docs](https://corona.lmao.ninja/docs)
+[disease.sh/](https://disease.sh/)
 
 ## Project setup
 ```
@@ -36,7 +36,7 @@ npm run build
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Cloud Function
-The function is just a proxy over the data source to avoid CORS. The source is in the project, but is deployed manually currently.
+The function is just a proxy over the data source to avoid CORS. The source is in the project, but is deployed manually at [GCP console](https://console.cloud.google.com/functions/list?project=covid-19-map-spread) currently.
 
 ## Google Maps API
 Public API key is restricted to [https://covid-19-timeline.netlify.com/](https://covid-19-timeline.netlify.com/)

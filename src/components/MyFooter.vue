@@ -8,7 +8,7 @@
                 <Portofolio size="20" />
             </p>
             <p>
-                Data source: <a href="https://corona.lmao.ninja/docs" target="_blank" rel="noopener">corona.lmao.ninja/docs</a> (reckon unrecorded incidents exists)
+                Data source: <a href="https://disease.sh/" target="_blank" rel="noopener">disease.sh/</a> (reckon unrecorded incidents exists)
             </p>
         </div>
     </footer>
