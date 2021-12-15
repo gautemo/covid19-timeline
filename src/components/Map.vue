@@ -52,8 +52,8 @@ export default {
 
     const openInfoWindow = mapEvent => {   
       info.value.setPosition(mapEvent.latLng);
-      info.value.country = mapEvent.feature.j;
-      updateInfoWindow(mapEvent.feature.j)
+      info.value.country = mapEvent.feature.i;
+      updateInfoWindow(mapEvent.feature.i)
       info.value.open(map.value)
     }
 
