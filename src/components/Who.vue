@@ -1,7 +1,7 @@
 <template>
     <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" target="_blank" rel="noopener">
         <p>Get the latest information from the World Health Organization about COVID-19</p>
-        <img src="@/assets/who.png" alt="WHO logo">
+        <img src="../assets/who.png" alt="WHO logo">
     </a>
 </template>
 

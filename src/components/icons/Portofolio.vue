@@ -9,13 +9,8 @@
   </a>
 </template>
 
-<script>
-export default {
-  props: ['size'],
-  setup({size}){
-    return { size }
-  }
-};
+<script setup>
+defineProps(['size'])
 </script>
 
 <style scoped>

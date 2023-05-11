@@ -14,18 +14,10 @@
     </footer>
 </template>
 
-<script>
-import Twitter from './icons/Twitter';
-import GitHub from './icons/GitHub';
-import Portofolio from './icons/Portofolio';
-
-export default {
-  components: {
-    Twitter,
-    GitHub,
-    Portofolio,
-  }
-}
+<script setup>
+import Twitter from './icons/Twitter.vue';
+import GitHub from './icons/GitHub.vue';
+import Portofolio from './icons/Portofolio.vue';
 </script>
 
 <style scoped>

@@ -2,126 +2,112 @@
   <div id="map"></div>
 </template>
 
-<script>
-import { onMounted, watch, ref } from "vue";
-import { useState } from '@/state.js';
-import { toGeo } from '@/mapGeoMapper'
-import { getCountry } from '@/countries'
-import { getArrowText } from '@/arrows.js';
+<script setup>
+import { watch, ref, toRefs } from "vue";
+import { state } from '../state.js';
+import { toGeo } from '../mapGeoMapper'
+import { getCountry } from '../countries'
+import { getArrowText } from '../arrows.js';
+import { useScriptTag } from '@vueuse/core'
 
-export default {
-  setup() {
-    const map = ref({});
-    const info = ref({})
-    const circles = ref([]);
+const map = ref({});
+const info = ref({})
+const circles = ref([]);
 
-    const loadMap = () => {
-      map.value = new google.maps.Map(document.getElementById("map"), {
-        zoom: 2,
-        center: { lat: 3, lng: 38 },
-        styles: darkMapStyle,
-      });
+useScriptTag(`https://maps.googleapis.com/maps/api/js?key=${import.meta.env.VITE_API_KEY}`, () => {
+  map.value = new google.maps.Map(document.querySelector("#map"), {
+    zoom: 2,
+    center: { lat: 3, lng: 38 },
+    styles: darkMapStyle,
+  });
 
-      map.value.data.setStyle(feature => {
-          var magnitude = feature.getProperty('mag');
-          return {
-            icon: {
-              path: google.maps.SymbolPath.CIRCLE,
-              fillColor: 'red',
-              fillOpacity: getOpacity(magnitude),
-              scale: getScale(magnitude),
-              strokeColor: 'white',
-              strokeWeight: .5
-            }
-          };
-        });
-
-      info.value = new google.maps.InfoWindow({})
-      map.value.data.addListener('click', (mapEvent) => openInfoWindow(mapEvent))
-      paintCircles(state.day)
+  map.value.data.setStyle(feature => {
+    var magnitude = feature.getProperty('mag');
+    return {
+      icon: {
+        path: google.maps.SymbolPath.CIRCLE,
+        fillColor: 'red',
+        fillOpacity: getOpacity(magnitude),
+        scale: getScale(magnitude),
+        strokeColor: 'white',
+        strokeWeight: .5
+      }
     };
+  });
 
-    const script = document.createElement('script');
-    script.onload = loadMap;
-    script.async = true;
-    script.defer = true;
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.VUE_APP_API_KEY}`;
-    document.head.appendChild(script);
+  info.value = new google.maps.InfoWindow({})
+  map.value.data.addListener('click', (mapEvent) => openInfoWindow(mapEvent))
+  paintCircles(state.day)
+})
 
-    const state = useState();
+const openInfoWindow = mapEvent => {
+  info.value.setPosition(mapEvent.latLng);
+  info.value.country = mapEvent.feature.i;
+  updateInfoWindow(mapEvent.feature.i)
+  info.value.open(map.value)
+}
 
-    const openInfoWindow = mapEvent => {   
-      info.value.setPosition(mapEvent.latLng);
-      info.value.country = mapEvent.feature.i;
-      updateInfoWindow(mapEvent.feature.i)
-      info.value.open(map.value)
+const updateInfoWindow = country => {
+  const incident = state.day.data.find(i => i.country === country);
+  if (!incident) {
+    info.value.close();
+    return;
+  }
+  const total = parseInt(incident.cases) || 0;
+  let recovered
+  if (state.simulateRecovered) {
+    recovered = incident.estimateRecovered || 0;
+  } else {
+    recovered = parseInt(incident.recovered) || 0;
+  }
+  const deaths = parseInt(incident.deaths) || 0;
+  const current = total - recovered - deaths;
+
+  let prevIncident = state.prevDay.find(i => i.country === country);
+  if (!prevIncident) {
+    prevIncident = {
+      cases: 0,
+      deaths: 0,
+      recovered: 0,
     }
+  }
+  const prevTotal = parseInt(prevIncident.cases) || 0;
+  let prevRecovered
+  if (state.simulateRecovered) {
+    prevRecovered = prevIncident.estimateRecovered || 0;
+  } else {
+    prevRecovered = parseInt(prevIncident.recovered) || 0;
+  }
+  const prevDeaths = parseInt(prevIncident.deaths) || 0;
+  const prevCurrent = prevTotal - prevRecovered - prevDeaths;
 
-    const updateInfoWindow = country => {
-      const incident = state.day.value.data.find(i => i.country === country);
-      if(!incident){
-        info.value.close();
-        return;
-      }
-      const total = parseInt(incident.cases) || 0;
-      let recovered
-      if(state.simulateRecovered.value){
-        recovered = incident.estimateRecovered || 0;
-      }else{
-        recovered = parseInt(incident.recovered) || 0;
-      }
-      const deaths = parseInt(incident.deaths) || 0;
-      const current = total - recovered - deaths;
-
-      let prevIncident = state.prevDay.value.find(i => i.country === country);
-      if(!prevIncident){
-        prevIncident = {
-          cases: 0,
-          deaths: 0,
-          recovered: 0,
-        }
-      }
-      const prevTotal = parseInt(prevIncident.cases) || 0;
-      let prevRecovered
-      if(state.simulateRecovered.value){
-        prevRecovered = prevIncident.estimateRecovered || 0;
-      }else{
-        prevRecovered = parseInt(prevIncident.recovered) || 0;
-      }
-      const prevDeaths = parseInt(prevIncident.deaths) || 0;
-      const prevCurrent = prevTotal - prevRecovered - prevDeaths;      
-
-      const { name } = getCountry(country);
-      info.value.setContent(`
+  const { name } = getCountry(country);
+  info.value.setContent(`
         <h2 class="info-box">${name}</h2>
         <p class="info-box">Current Infected: <span class="red">${format(current)}</span> ${getArrowText(prevCurrent, current, true)}</p>
         <p class="info-box">Cases: ${format(total)} ${getArrowText(prevTotal, total, true)}</p>
         <p class="info-box">Recovered: ${format(recovered)} ${getArrowText(prevRecovered, recovered, true, true)}</p>
         <p class="info-box">Deaths: ${format(deaths)} ${getArrowText(prevDeaths, deaths, true)}</p>
       `);
+}
+
+const paintCircles = () => {
+  circles.value.forEach(c => c.setGeometry(null));
+  if (Object.keys(map.value).length > 0) {
+    const featureCollection = {
+      type: "FeatureCollection",
+      features: state.day.data.map(i => toGeo(i, state.simulateRecovered)).filter(g => g),
     }
-
-    const paintCircles = () => {
-      circles.value.forEach(c => c.setGeometry(null));
-      if(Object.keys(map.value).length > 0){
-        const featureCollection = {
-          type: "FeatureCollection",
-          features: state.day.value.data.map(i => toGeo(i, state.simulateRecovered.value)).filter(g => g),
-        }
-        circles.value = map.value.data.addGeoJson(featureCollection)
-      }
-      if(info.value.country){
-        updateInfoWindow(info.value.country)
-      }
-    }
-
-    watch([state.day, state.simulateRecovered], () => {
-      paintCircles()
-    })
-
-    return { };
+    circles.value = map.value.data.addGeoJson(featureCollection)
   }
-};
+  if (info.value.country) {
+    updateInfoWindow(info.value.country)
+  }
+}
+
+watch([toRefs(state).day, toRefs(state).simulateRecovered], () => {
+  paintCircles()
+})
 
 const format = num => new Intl.NumberFormat().format(num)
 
@@ -382,26 +368,26 @@ const darkMapStyle = [
 </script>
 
 <style scoped>
-#map{
+#map {
   flex: 1;
 }
 
-#map ::v-deep(.info-box){
+#map ::v-deep(.info-box) {
   margin: 5px 0;
   display: flex;
   align-items: center;
 }
 
-#map ::v-deep(.info-box .red){
+#map ::v-deep(.info-box .red) {
   border-bottom: 2px solid #d21921;
   border-radius: 1px;
 }
 
-#map ::v-deep(.info-box .color-red){
+#map ::v-deep(.info-box .color-red) {
   color: #d21921;
 }
 
-#map ::v-deep(.info-box .color-green){
+#map ::v-deep(.info-box .color-green) {
   color: #159c33;
 }
 </style>
