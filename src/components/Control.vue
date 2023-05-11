@@ -1,95 +1,91 @@
 <template>
-  <div class="control">
-    <PlayButton @click="control.playing = !control.playing" :playing="control.playing"/>
-    <input class="speed" type="range" min="1000" max="5000" v-model.number="control.speed" :style="{ '--percentage': `${(control.speed - 1000) / 4000 * 100}%` }" />
-    <span class="speed-display">
-        <span>{{speedDisplay}}</span>
-        <Speed/>
-    </span>
-    <label class="simulate">
-        <span @click="simulate = false" class="label">Tracked<br/> recovered</span>
-        <div class="switch" :class="{checked: simulate}" @click="simulate = !simulate">
-            <div class="slider"></div>
+    <div class="control">
+        <PlayButton @click="control.playing = !control.playing" :playing="control.playing" />
+        <input class="speed" type="range" min="1000" max="5000" v-model.number="control.speed"
+            :style="{ '--percentage': `${(control.speed - 1000) / 4000 * 100}%` }" />
+        <span class="speed-display">
+            <span>{{ speedDisplay }}</span>
+            <Speed />
+        </span>
+        <label class="simulate">
+            <span @click="state.simulateRecovered = false" class="label">Tracked<br /> recovered</span>
+            <div class="switch" :class="{ checked: state.simulateRecovered }" @click="state.simulateRecovered = !state.simulateRecovered">
+                <div class="slider"></div>
+            </div>
+            <span @click="state.simulateRecovered = true" class="label">Estimated<br /> recovered</span>
+            <div class="info">
+                <Info class="simulate-info-icon" />
+                <span class="simulate-info">
+                    <span class="label">Tracked recovered cases:</span>
+                    <p>
+                        Current infected and recovered cases from the numbers that the countries have recorded being
+                        recovered.
+                        Note that this numbers can be incorrect, since not all is tracking theese numbers.
+                    </p>
+                    <span class="label">Estimated recovered cases:</span>
+                    <p>
+                        Current infected and recovered cases from a three-week rolling total of new cases.
+                        Which is reasonable according to average healing time and most tests are taken some time after the
+                        person was exposed.
+                    </p>
+                </span>
+            </div>
+        </label>
+        <Stats />
+        <div class="progress-bar">
+            <Today />
+            <h3 class="date">{{ day }}</h3>
+            <input class="progress" type="range" min="0" :max="state.nrDays - 1" v-model.number="state.progress"
+                :style="{ '--percentage': `${state.progress / (state.nrDays - 1) * 100}%` }" />
         </div>
-        <span @click="simulate = true" class="label">Estimated<br/> recovered</span>
-        <div class="info">
-            <Info class="simulate-info-icon"/>
-            <span class="simulate-info">
-                <span class="label">Tracked recovered cases:</span>
-                <p>
-                    Current infected and recovered cases from the numbers that the countries have recorded being recovered. 
-                    Note that this numbers can be incorrect, since not all is tracking theese numbers.
-                </p>                
-                <span class="label">Estimated recovered cases:</span>
-                <p>
-                    Current infected and recovered cases from a three-week rolling total of new cases. 
-                    Which is reasonable according to average healing time and most tests are taken some time after the person was exposed.
-                </p>
-            </span>
-        </div>
-    </label>
-    <Stats/>
-    <div class="progress-bar">
-        <Today />
-        <h3 class="date">{{day}}</h3>
-        <input class="progress" type="range" min="0" :max="nrDays - 1" v-model.number="progress" :style="{ '--percentage': `${progress / (nrDays-1) * 100}%` }" />
     </div>
-  </div>
 </template>
 
-<script>
-import PlayButton from '@/components/PlayButton'
-import Speed from '@/components/icons/Speed'
-import Today from '@/components/icons/Today'
-import Info from '@/components/icons/Info'
-import Stats from '@/components/Stats'
+<script setup>
+import PlayButton from './PlayButton.vue'
+import Speed from './icons/Speed.vue'
+import Today from './icons/Today.vue'
+import Info from './icons/Info.vue'
+import Stats from './Stats.vue'
 
-import { useState } from '@/state.js';
-import { ref, watch, reactive, toRefs, computed } from 'vue';
+import { state } from '../state.js';
+import { watch, reactive, toRefs, computed } from 'vue';
 
 const startInterval = (state, control) => {
-  return setInterval(() => {
-    state.progress.value++;
-    if(state.progress.value >= state.nrDays.value){
-      state.progress.value = state.nrDays.value - 1;
-      control.playing = false;
-    }
-  }, control.speed);
+    return setInterval(() => {
+        state.progress++;
+        if (state.progress >= state.nrDays) {
+            state.progress = state.nrDays - 1;
+            control.playing = false;
+        }
+    }, control.speed);
 }
 
-export default {
-  setup(){
-    const state = useState();
-    const control = reactive({
-      playing: true,
-      speed: 1500,
-      intervalId: -1,
-    })
+const control = reactive({
+    playing: true,
+    speed: 1500,
+    intervalId: -1,
+})
 
-    control.intervalId = startInterval(state, control)
+control.intervalId = startInterval(state, control)
 
-    watch([toRefs(control).playing, toRefs(control).speed], () => {
-      clearInterval(control.intervalId);
-      if(control.playing){
-        if(state.progress.value == state.nrDays.value - 1){
-          state.progress.value = 0;
+watch([toRefs(control).playing, toRefs(control).speed], () => {
+    clearInterval(control.intervalId);
+    if (control.playing) {
+        if (state.progress == state.nrDays - 1) {
+            state.progress = 0;
         }
         control.intervalId = startInterval(state, control)
-      }
-    })
+    }
+})
 
-    const day = computed(() => new Intl.DateTimeFormat().format(new Date(state.day.value.date)));
+const day = computed(() => new Intl.DateTimeFormat().format(new Date(state.day.date)));
 
-    const speedDisplay = computed(() => `${parseFloat((control.speed/1000).toFixed(1))}s`)
-    
-    return { day, nrDays: state.nrDays, progress: state.progress, control, speedDisplay, simulate: state.simulateRecovered }
-  },
-  components: { PlayButton, Speed, Today, Stats, Info }
-}
+const speedDisplay = computed(() => `${parseFloat((control.speed / 1000).toFixed(1))}s`)
 </script>
 
 <style scoped>
-.control{
+.control {
     display: grid;
     grid-template-columns: 30px 200px 70px 1fr auto;
     padding: 25px;
@@ -97,7 +93,7 @@ export default {
     gap: 20px 5px;
 }
 
-input[type=range]{
+input[type=range] {
     --percentage: 0%;
     cursor: pointer;
     appearance: none;
@@ -106,20 +102,20 @@ input[type=range]{
     background: linear-gradient(90deg, var(--second-color) var(--percentage), var(--third-color) var(--percentage));
 }
 
-input.speed{
+input.speed {
     transform: rotate(-180deg);
     background: linear-gradient(90deg, var(--third-color) var(--percentage), var(--second-color) var(--percentage));
 }
 
-input.speed:hover + svg ::v-deep(.path){
+input.speed:hover+svg ::v-deep(.path) {
     fill: var(--second-color);
 }
 
-.progress-bar:hover ::v-deep(.path){
+.progress-bar:hover ::v-deep(.path) {
     fill: var(--second-color);
 }
 
-.progress-bar{
+.progress-bar {
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: auto auto 1fr;
@@ -127,16 +123,17 @@ input.speed:hover + svg ::v-deep(.path){
     align-items: center;
 }
 
-.speed-display{
+.speed-display {
     display: flex;
     align-items: center;
 }
 
-.speed-display span{
+.speed-display span {
     min-width: 32px;
 }
 
-[type='range'], [type='range']::-webkit-slider-thumb{
+[type='range'],
+[type='range']::-webkit-slider-thumb {
     appearance: none;
 }
 
@@ -148,6 +145,7 @@ input.speed:hover + svg ::v-deep(.path){
     opacity: 0;
     transition: opacity 0.25s ease-in-out;
 }
+
 [type='range']:hover::-webkit-slider-thumb {
     opacity: 1;
 }
@@ -160,6 +158,7 @@ input.speed:hover + svg ::v-deep(.path){
     opacity: 0;
     transition: opacity 0.25s ease-in-out;
 }
+
 [type='range']:hover::-ms-thumb {
     opacity: 1;
 }
@@ -172,28 +171,29 @@ input.speed:hover + svg ::v-deep(.path){
     opacity: 0;
     transition: opacity 0.25s ease-in-out;
 }
+
 [type='range']:hover::-moz-range-thumb {
     opacity: 1;
 }
 
-.simulate{
+.simulate {
     margin-right: 15px;
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-.simulate .label{
+.simulate .label {
     font-weight: bold;
 }
 
-.switch{
+.switch {
     position: relative;
     width: 60px;
     height: 30px;
 }
 
-.slider{
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -206,34 +206,34 @@ input.speed:hover + svg ::v-deep(.path){
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 22px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: var(--third-color);
-  transition: .4s;
-  border-radius: calc(25px * 0.1);
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--third-color);
+    transition: .4s;
+    border-radius: calc(25px * 0.1);
 }
 
-.checked .slider{
+.checked .slider {
     background: var(--main-color);
 }
 
-.checked .slider:before{
+.checked .slider:before {
     transform: translateX(26px);
 }
 
-.info{
+.info {
     position: relative;
 }
 
-.info p{
+.info p {
     margin: 3px 0;
 }
 
-.simulate-info{
+.simulate-info {
     position: absolute;
     width: 375px;
     padding: 10px 20px;
@@ -246,16 +246,16 @@ input.speed:hover + svg ::v-deep(.path){
 }
 
 .info:hover .simulate-info,
-.info:focus .simulate-info{
+.info:focus .simulate-info {
     display: block;
 }
 
 @media only screen and (max-width: 1150px) {
-    .control{
+    .control {
         padding: 15px;
     }
 
-    .stats{
+    .stats {
         grid-column: 1 / -1;
         justify-self: start;
     }
@@ -274,9 +274,8 @@ input.speed:hover + svg ::v-deep(.path){
 }
 
 @media only screen and (max-width: 600px) {
-    .control{
+    .control {
         padding: 5px;
         grid-template-columns: 30px 1fr 70px 1fr;
     }
-}
-</style>
+}</style>

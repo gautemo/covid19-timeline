@@ -3,7 +3,7 @@
     <h1>COVID-19 Timeline</h1>
     <Who/>
   </header>
-  <main v-if="nrDays > 0">
+  <main v-if="state.nrDays > 0">
     <Control />
     <Map/>
   </main>
@@ -13,24 +13,12 @@
   <MyFooter/>
 </template>
 
-<script>
-import Who from '@/components/Who'
-import MyFooter from '@/components/MyFooter'
-import PlayButton from '@/components/PlayButton'
-import Control from '@/components/Control'
-import Map from '@/components/Map'
-
-import { useState } from '@/state.js';
-
-export default {
-  name: 'App',
-  setup(){
-    const state = useState();
-
-    return { nrDays: state.nrDays, }
-  },
-  components: { Who, MyFooter, Control, Map }
-}
+<script setup>
+import Who from './components/Who.vue'
+import MyFooter from './components/MyFooter.vue'
+import Control from './components/Control.vue'
+import Map from './components/Map.vue'
+import { state } from './state.js';
 </script>
 
 <style>
