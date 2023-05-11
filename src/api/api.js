@@ -1,4 +1,4 @@
-import backup from '@/api/backupData.json'
+import backup from './backupData.json'
 
 const getCovid19 = async () => {
     return convertData(backup);

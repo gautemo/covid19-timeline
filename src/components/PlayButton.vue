@@ -5,11 +5,8 @@
     </div>
 </template>
 
-<script>
-import { computed } from 'vue'
-export default {
-    props: ['playing'],
-}
+<script setup>
+defineProps(['playing'])
 </script>
 
 <style scoped>
